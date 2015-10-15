@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RDBSchema="http:///com/ibm/etools/rdbschema.ecore" name="TRANSACTION1" primaryKey="//@namedGroup.0">
+  <database href="BANKDB.dbxmi#/"/>
+  <schema href="BANKDB_ITSO.schxmi#/"/>
+  <columns xsi:type="RDBSchema:RDBColumn" name="DISCRIM_TRANSACTION1">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="32">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="TIMESTAMP1" allowNull="true">
+    <type xsi:type="RDBSchema:SQLTimestamp">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="AMOUNT">
+    <type xsi:type="RDBSchema:SQLExactNumeric">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="ID">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="250">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="TRANSACTIONSACCOUNTINVERSE_ID" allowNull="true">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="250">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <namedGroup xsi:type="RDBSchema:SQLReference" name="PK_TRANSACTION1" members="//@columns.3" constraint="//@constraints.0"/>
+  <constraints name="PK_TRANSACTION1" type="PRIMARYKEY" primaryKey="//@namedGroup.0"/>
+</RDBSchema:RDBTable>

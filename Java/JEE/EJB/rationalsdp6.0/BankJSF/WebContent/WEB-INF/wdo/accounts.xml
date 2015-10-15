@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.websphere.sdo.mediator.jdbc.metadata:Metadata xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.websphere.sdo.mediator.jdbc.metadata="http:///com/ibm/websphere/sdo/mediator/jdbc/metadata.ecore" rootTable="//@tables.0">
+  <tables schemaName="ITSO" name="ACCOUNTS_CUSTOMERS">
+    <primaryKey columns="//@tables.0/@columns.0 //@tables.0/@columns.1"/>
+    <foreignKeys columns="//@tables.0/@columns.0"/>
+    <columns name="ACCOUNTS_ID" type="4"/>
+    <columns name="CUSTOMERS_SSN" type="4"/>
+    <filter predicate="( CUSTOMERS_SSN = ? )">
+      <filterArguments name="sessionScopecustomerSSN" type="4"/>
+    </filter>
+  </tables>
+  <tables schemaName="ITSO" name="ACCOUNT">
+    <primaryKey columns="//@tables.1/@columns.1"/>
+    <columns name="BALANCE"/>
+    <columns name="ID" type="4"/>
+  </tables>
+  <relationships childKey="//@tables.0/@foreignKeys.0" parentKey="//@tables.1/@primaryKey" exclusive="false"/>
+</com.ibm.websphere.sdo.mediator.jdbc.metadata:Metadata>

@@ -1,0 +1,84 @@
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema
+    version="1.0" 
+    targetNamespace="http://ns.soacookbook.com/credit"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="http://ns.soacookbook.com/credit"
+    elementFormDefault="qualified">
+                
+<xs:element name="creditCard" type="tns:CreditCard" />
+
+<xs:element name="authorization" type="tns:Authorization" />
+
+<xs:annotation>
+    <xs:documentation xml:lang="en">
+        A Credit Card contains a number, a cardholder name, 
+        and an expiry date. The date is just an XSD date, 
+        and the others are custom types with constraints.
+    </xs:documentation>
+</xs:annotation>
+<xs:complexType name="CreditCard">
+    <xs:sequence>
+        <xs:element id="cardNumber" name="cardNumber" 
+                type="tns:CardNumber" 
+                minOccurs="1" maxOccurs="1"/>
+                
+        <xs:element id="name" name="name" type="tns:Name" />
+        
+        <xs:element id="expirationDate" name="expirationDate" 
+                type="xs:date" nillable="true" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Name">
+    <xs:sequence>
+        <xs:element name="firstName" type="tns:NameString"/>
+        <xs:element name="middleInitial" type="tns:InitialString" 
+            nillable="true"/>
+        <xs:element name="lastName" type="tns:NameString"/>
+    </xs:sequence>
+</xs:complexType>
+
+<!-- Names must be at least 2 characters, no more than 35 
+  characters, and consist of alphabetic characters, hyphens, 
+  single quotes, periods and spaces -->
+<xs:simpleType name="NameString">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="2" />
+        <xs:maxLength value="35" />
+        <xs:pattern value="[A-Za-z\-. ]{2,35}" />
+    </xs:restriction>
+ </xs:simpleType>
+
+ <xs:simpleType name="InitialString">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="0" />
+        <xs:maxLength value="1" />
+        <xs:pattern value="[A-Za-z]?" />
+    </xs:restriction>
+ </xs:simpleType>
+     
+ <!--Just simple constraint to keep it this short. 
+ Not good enough for real world.-->
+<xs:simpleType name="CardNumber">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\^(\d{4}[- ]){3}\d{4}|\d{16}$" />
+        <xs:minLength value="10" />
+        <xs:maxLength value="16" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="Authorization">
+    <xs:sequence>
+        <xs:element name="amount" type="xs:double"/>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>
+

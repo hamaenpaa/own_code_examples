@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><%-- tpl:metadata --%><%-- jsf:pagecode language="java" location="/JavaSource/pagecode/BankJSFTemplate.java" --%><%-- /jsf:pagecode --%><%-- /tpl:metadata --%><html>
+		<head>
+		<%@ taglib uri="http://java.sun.com/jsf/core" prefix="f" %>		<%@ page 
+language="java"
+contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"
+%>		 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><meta name="GENERATOR" content="IBM Software Development Platform" >		
+<meta http-equiv="Content-Style-Type" content="text/css" >
+<link href="/BankJSF/theme/Master.css" rel="stylesheet" type="text/css" ><%-- tpl:insert attribute="headarea" --%>		<title>BankJSFTemplate.jtpl</title><%-- /tpl:insert --%>
+		</head><f:view><body>
+   <p>Place content here.</p>
+</body>		</f:view></html>

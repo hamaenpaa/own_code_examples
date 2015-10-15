@@ -1,0 +1,23 @@
+HKCR
+{
+	Atlrotary2.AtlRotaryProp.1 = s 'AtlRotaryProp Class'
+	{
+		CLSID = s '{850476E2-F76B-11D3-B4E3-A1CAA7050736}'
+	}
+	Atlrotary2.AtlRotaryProp = s 'AtlRotaryProp Class'
+	{
+		CLSID = s '{850476E2-F76B-11D3-B4E3-A1CAA7050736}'
+		CurVer = s 'Atlrotary2.AtlRotaryProp.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {850476E2-F76B-11D3-B4E3-A1CAA7050736} = s 'AtlRotaryProp Class'
+		{
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

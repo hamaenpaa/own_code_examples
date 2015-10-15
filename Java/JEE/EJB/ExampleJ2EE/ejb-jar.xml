@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+<display-name>ExampleEJBs</display-name>
+<enterprise-beans>
+<entity>
+<ejb-name>Company</ejb-name>
+<home>example.ejb.entity.CompanyLocalHome</home>
+<remote>example.ejb.entity.CompanyLocal</remote>
+<ejb-class>example.ejb.entity.CompanyEntityBean</ejb-class>
+<persistence-type>Container</persistence-type>
+<prim-key-class>java.lang.Integer</prim-key-class>
+<reentrant>false</reentrant>
+<cmp-version>2.x</cmp-version>
+<abstract-schema-name>COMPANY</abstract-schema-name>
+<cmp-field><field-name>companyID</field-name></cmp-field>
+<cmp-field><field-name>name</field-name></cmp-field>
+<cmp-field><field-name>phone</field-name></cmp-field>
+<cmp-field><field-name>address</field-name></cmp-field>
+<cmp-field><field-name>email</field-name></cmp-field>
+<cmp-field><field-name>website</field-name></cmp-field>
+<primkey-field>companyID</primkey-field>
+</entity>
+        <entity>
+            <display-name>ProductsToBuyFromCompaniesEB</display-name>
+            <ejb-name>ProductsToBuyFromCompaniesBean</ejb-name>
+            <local-home>ejb.entity.ProductsToBuyFromCompaniesLocalHome_1</local-home>
+            <local>ejb.entity.ProductsToBuyFromCompaniesLocal_1</local>
+            <ejb-class>ejb.entity.ProductsToBuyFromCompaniesBean_1</ejb-class>
+            <persistence-type>Container</persistence-type>
+            <prim-key-class>java.lang.Integer</prim-key-class>
+            <reentrant>false</reentrant>
+            <abstract-schema-name>ProductsToBuyFromCompanies</abstract-schema-name>
+            <cmp-field>
+                <field-name>key</field-name>
+            </cmp-field>
+            <primkey-field>key</primkey-field>
+        </entity>
+        </enterprise-beans>
+<assembly-descriptor>
+<container-transaction>
+<method>
+<ejb-name>Company</ejb-name>
+<method-intf>Remote</method-intf>
+<method-name>*</method-name>
+</method>
+<method>
+<ejb-name>Company</ejb-name>
+<method-intf>Home</method-intf>
+<method-name>*</method-name>
+</method>
+<trans-attribute>Required</trans-attribute>
+</container-transaction>
+        <container-transaction>
+            <method>
+                <ejb-name>ProductsToBuyFromCompaniesBean</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <trans-attribute>Required</trans-attribute>
+        </container-transaction>
+        </assembly-descriptor>
+</ejb-jar>

@@ -1,0 +1,26 @@
+HKCR
+{
+	Atl1.Kokeilu.1 = s 'Kokeilu Class'
+	{
+		CLSID = s '{E78F35AC-D57D-11D3-A757-00105A72C3E0}'
+	}
+	Atl1.Kokeilu = s 'Kokeilu Class'
+	{
+		CLSID = s '{E78F35AC-D57D-11D3-A757-00105A72C3E0}'
+		CurVer = s 'Atl1.Kokeilu.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E78F35AC-D57D-11D3-A757-00105A72C3E0} = s 'Kokeilu Class'
+		{
+			ProgID = s 'Atl1.Kokeilu.1'
+			VersionIndependentProgID = s 'Atl1.Kokeilu'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{E78F359F-D57D-11D3-A757-00105A72C3E0}'
+		}
+	}
+}

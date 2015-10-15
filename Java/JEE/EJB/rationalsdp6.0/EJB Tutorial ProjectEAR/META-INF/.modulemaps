@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulemap:EARProjectMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:application="application.xmi" xmlns:modulemap="modulemap.xmi" xmi:id="EARProjectMap_1145392946187">
+  <mappings xmi:id="ModuleMapping_1145392946187" projectName="EJB Tutorial Project">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1145392946187"/>
+  </mappings>
+  <utilityJARMappings xmi:id="UtilityJARMapping_1145392947812" projectName="EJB Tutorial ProjectClient" uri="EJB_Tutorial_ProjectClient.jar"/>
+</modulemap:EARProjectMap>

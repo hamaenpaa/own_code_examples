@@ -1,0 +1,10 @@
+package hello;
+
+import javax.ejb.Stateless;
+import javax.persistence.*;
+import java.util.List;
+
+public class MessageHandlerBean implements MessageHandler 
+{
+
+}

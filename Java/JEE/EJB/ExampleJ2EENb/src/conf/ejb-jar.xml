@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+    <display-name>ExampleJ2EENb</display-name>
+    <enterprise-beans>
+        <entity>
+            <display-name>CompanyEB</display-name>
+            <ejb-name>CompanyBean</ejb-name>
+            <local-home>ejb.entity.CompanyLocalHome</local-home>
+            <local>ejb.entity.CompanyLocal</local>
+            <ejb-class>ejb.entity.CompanyBean</ejb-class>
+            <persistence-type>Container</persistence-type>
+            <prim-key-class>int</prim-key-class>
+            <reentrant>false</reentrant>
+            <abstract-schema-name>Company</abstract-schema-name>
+            <cmp-field>
+                <field-name>key</field-name>
+            </cmp-field>
+            <primkey-field>key</primkey-field>
+        </entity>
+        </enterprise-beans>
+    <assembly-descriptor>
+        <container-transaction>
+            <method>
+                <ejb-name>CompanyBean</ejb-name>
+                <method-name>*</method-name>
+            </method>
+            <trans-attribute>Required</trans-attribute>
+        </container-transaction>
+        </assembly-descriptor>
+    </ejb-jar>

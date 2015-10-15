@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:c="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+	<h:head>
+		<title>Books</title>
+	</h:head>
+	<h:body>
+		<h1>Books</h1>
+		<div>#{book}</div>
+		<div style="color:red; font-style: italic"><h:messages/></div>
+ 		<h:form id="lomake">
+ 		    <h:inputText name="isbn" value="#{book.isbn}"></h:inputText>
+			<h:inputText name="tekijat" value="#{book.tekijat}"></h:inputText>
+			<h:inputText name="nimi" value="#{book.nimi}"></h:inputText>
+			<h:commandButton action="#{bookMap.addBook()}" value="tallenna" id="painike"></h:commandButton>
+		</h:form>
+		<h:dataTable value="#{bookMap.bookList}" var="b">
+			<h:column>#{b.isbn}</h:column>
+			<h:column>#{b.tekijat}</h:column>
+			<h:column>#{b.nimi}</h:column>
+		</h:dataTable> 
+	</h:body>
+</html>

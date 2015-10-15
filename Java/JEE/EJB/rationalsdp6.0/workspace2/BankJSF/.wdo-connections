@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.websphere.wdo.connections:connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.websphere.wdo.connections="http://www.ibm.com/websphere/wdo/connections">
+  <connection id="BankJSF_Con1">
+    <development xsi:type="com.ibm.websphere.wdo.connections:rsc-live-connection" id="BankJSF_Con1_dev" name="Bank Connection"/>
+    <runtime xsi:type="com.ibm.websphere.wdo.connections:datasource-connection" auto-deploy="true" class-location="D:\IBM\Rational\ADTrial\6.0\runtimes\base_v6\cloudscape\lib\db2j.jar" id="BankJSF_Con1_runtime" classname="com.ibm.db2j.jdbc.DB2jConnectionPoolDataSource" database-location="C:\Databases\Bank;create=true" database-name="Bank" jndi-name="jdbc/BankJSF_Con1" password="{xor}" resource-reference-name="BankJSF_Con1" sql-vendor-type="25" userid="admin"/>
+  </connection>
+</com.ibm.websphere.wdo.connections:connections>

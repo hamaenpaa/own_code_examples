@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RDBSchema="http:///com/ibm/etools/rdbschema.ecore" name="CUSTOMER" primaryKey="//@namedGroup.0">
+  <database href="BANKDB.dbxmi#/"/>
+  <schema href="BANKDB_ITSO.schxmi#/"/>
+  <columns xsi:type="RDBSchema:RDBColumn" name="TITLE" allowNull="true">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="250">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="FIRSTNAME" allowNull="true">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="250">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="LASTNAME" allowNull="true">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="250">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="SSN">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="250">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <namedGroup xsi:type="RDBSchema:SQLReference" name="PK_CUSTOMER" members="//@columns.3" constraint="//@constraints.0"/>
+  <constraints name="PK_CUSTOMER" type="PRIMARYKEY" primaryKey="//@namedGroup.0"/>
+</RDBSchema:RDBTable>

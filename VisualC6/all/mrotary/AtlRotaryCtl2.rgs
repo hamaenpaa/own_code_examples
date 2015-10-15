@@ -1,0 +1,35 @@
+HKCR
+{
+	Atlrotary2.AtlRotaryCtl2.1 = s 'AtlRotaryCtl2 Class'
+	{
+		CLSID = s '{E119FD9C-F680-11D3-B4E3-9CE8F7073B36}'
+		'Insertable'
+	}
+	Atlrotary2.AtlRotaryCtl2 = s 'AtlRotaryCtl2 Class'
+	{
+		CLSID = s '{E119FD9C-F680-11D3-B4E3-9CE8F7073B36}'
+		CurVer = s 'Atlrotary2.AtlRotaryCtl2.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E119FD9C-F680-11D3-B4E3-9CE8F7073B36} = s 'AtlRotaryCtl2 Class'
+		{
+			ProgID = s 'Atlrotary2.AtlRotaryCtl2.1'
+			VersionIndependentProgID = s 'Atlrotary2.AtlRotaryCtl2'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 102'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{E119FD8E-F680-11D3-B4E3-9CE8F7073B36}'
+			'Version' = s '1.0'
+		}
+	}
+}

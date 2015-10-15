@@ -1,0 +1,1 @@
+void odota_jotakin();void ei_toimi();void viiva(int pit, char merkki );void otsikko( int valinta, const char *teksti );char lue_jono( char *jono, int maxpit );

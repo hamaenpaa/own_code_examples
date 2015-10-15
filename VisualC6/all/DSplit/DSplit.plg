@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSplit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40b /fo"Debug/DSplit.res" /d "_DEBUG" /d "_AFXDLL" "C:\visualc\DSplit\DSplit.rc"" 
+Creating temporary file "c:\windows\TEMP\RSPE315.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DSplit.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"C:\visualc\DSplit\DSplit.cpp"
+"C:\visualc\DSplit\MainFrm.cpp"
+"C:\visualc\DSplit\DSplitDoc.cpp"
+"C:\visualc\DSplit\DSplitView.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSPE315.TMP" 
+Creating temporary file "c:\windows\TEMP\RSPE316.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/DSplit.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"C:\visualc\DSplit\StdAfx.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSPE316.TMP" 
+Creating temporary file "c:\windows\TEMP\RSPE317.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DSplit.pdb" /debug /machine:I386 /out:"Debug/DSplit.exe" /pdbtype:sept 
+.\Debug\DSplit.obj
+.\Debug\StdAfx.obj
+.\Debug\MainFrm.obj
+.\Debug\DSplitDoc.obj
+.\Debug\DSplitView.obj
+.\Debug\DSplit.res
+]
+Creating command line "link.exe @c:\windows\TEMP\RSPE317.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DSplit.cpp
+MainFrm.cpp
+DSplitDoc.cpp
+DSplitView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DSplit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

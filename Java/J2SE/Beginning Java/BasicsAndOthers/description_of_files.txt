@@ -1,0 +1,294 @@
+Basic functionalities
+-------------------------------------------------------------------------------------------
+
+Simple to more and more difficult examples doing some basic operations:
+-----------------------------------------------------------------------
+Ch2Ex1.java   multiplication
+Ch2Ex2.java   casting between numeric types
+Ch2Ex3.java   calculating tax:
+                 using integer and double types to get
+                 cast to integer and separate between dollars and cents
+Ch2Ex4.java   using Math class to calculate volume of Sun and Earth and their ratio
+Ch3Ex1.java   Uses switch - case with randomly chosen integer to "select" breakfast type
+Ch3Ex2.java   Uses Math sqrt, ceil and inner loop to find prime integers upto 50 
+              ( this is constant in the beginning of the method main )
+Ch3Ex3.java   Uses if else else... to calculate 5 rows of 
+              multiple different numbers and output them
+              1 as default if no difference is found 
+Ch3Ex4.java   output random length string with random capital english alphabetical 
+              characters that are not vocals.
+Ch4Ex1.java   Initializes array of Strings with english month names and a second
+              array with same indices to random integers. Outputs those month names
+              and numbers, calculates average of those numbers and outputs it.
+Ch4Ex2.java   Forms multiplication table into 2 dimensional integer array and outputs it.
+              Uses also inner for loops to do the work.
+Ch4Ex3.java   Tokenizes string ( splits into parts between spaces ), orders the words 
+              into alphabetical order and prints them in alphabetical order.
+              while and for loops inside each other.
+Ch4Ex4.java   Tokenizes date string and uses some criteria to validate if the month,
+              day and year are proper. Outputs the proper dates and the errors if
+              the dates are not correct.
+Ch4Ex5.java   Tokenizes text string to words, reverses each word in stringbuffer and
+              joins the parts together.
+
+Very simple named examples:
+---------------------------
+StringCharacters.java
+              Goes through a string characters and counts how many vocal, consonants
+              and white spaces there are
+LetterCheck.java
+              Generates random character and categorizes it with character 'a','z','A','Z'
+              constants to small and capital letters and non letter characters.
+LuckyStars.java
+              Constant String array, random integer and reference to an array item.  
+NumberCheck.java
+              Simple if ... else check to categorize random 
+              integer number to even or odd numbers with some number limits    
+MatchStrings.java   
+MatchStrings2.java
+             Demonstration of referinning references with == using String objects.
+             That is different than the content similarity checked correctly with equals
+             method.
+Scope.java
+             Demonstaration of scopes of variables inside a method
+SequenceStrings.java
+              Does String comparisons using CompareTo method
+SomeBooleanChecks.java
+              Uses modulus,++ and, & and && operators,
+              comparisons <=,... uses is.. methods of Character.                                       
+SumExceptMultiplesOfThree.java
+              Goes through numbers 1..20 and calculates the sum of numbers that are not
+              multiples of 3. Loop, modulus and continue used.
+SwitchEx.java 
+              Simple example of switch...case selections
+WhileLoop.java
+              Simple while loop calculating a sum of integers.                         
+DoWhileLoop.java 
+              Simple example of do...while loop       
+ExtractSubstring.java
+              Uses indexOf and substring methods of String class to tokenize
+              string between spaces. Uses do...while and for loops and String array 
+              in the task
+FindCharacters.java
+              Uses indexof and lastIndexOf methods of String class and while loops
+              to find out counts of 'the' and 'and' words in a string.
+JoinStrings.java   
+              Demonstrates adding of mixed strings and integers and their results.      
+TokenizeAString.java
+              Uses StringTokenizer to split a String to pieces separated by space.
+WheatherFun.java
+              2-dimensional table of float temperature values.
+Factorial.java
+              Calculates factorials of 1..20. Two inner for loops used in the operation.
+Factorial2.java                
+              Calculates factorials of 1..20. while loop inside for loop used in the operation.
+Factorial3.java              
+              Calculates factorials of 1..20 except for those numbers that are odd and
+              bigger than 10. Two inner for loops used in the operation with named outer
+              loop and continue refering to the outer loop inside the inner loop.
+FindPrimes.java
+              Find the prime numbers upto 50 using inner loops and break and continue 
+              statements. Does not use sqrt optimization for that Ch3Ex2.java
+PowerCalc.java
+              Creates power method for integer (-,0,+) exponent powers using recursive
+              method calls with exponents having smaller integer values. 
+Primes.java
+              Using 2 inner for loops and break inside the inner one to find prime
+              values upto 50.
+Primes2.java
+              Similar than Primes.java except for using continue to refer to outer loop
+              instead of breaking the inner loop.     
+DataAndCalc.java
+              Basic integer and floating point calculations with fruit example.
+DataAndCalc2.java
+              More integer and floating point calculations using Math methods
+              and even bitwise operations.                     
+MorePrimes.java
+              This is the most advanced primes calculator using sqrt, inner loops, 
+              continue statement and also array of already found primes to make
+              the calculation to do as few loop steps as possible.              
+ForLoop.java 
+              Uses versatile for loops and increment ++ operations to calculate
+              sums of squares and circle areas. There is also commented warning
+              example code of setting end condition depend on floating point operation
+              to construct never ending loop. 
+TryInitialization.java
+              Demonstrates of static member variables in an unnamed static block
+              in the same class.              
+TryAssertions.java
+              Test using of assertions to break execution of program in certain
+              situation.              
+              
+File and stream (IO) operations:
+-----------------------------------------------------------------------------------  
+TryFile.java - checks basic properties of file: read,write,directory or not,exists
+TryFile2.java - checks for the file if it is directory or not and if it is directory
+                shows the count of the files inside it and 
+                lists the files of it and their modified date
+TryFile2.java - uses FileListFilter.java to get java extension files with F
+                in the beginning from the directory of files otherwise similar
+                way than TryFile2.java            
+FileCopy.java  
+              Does file copy operation. Handles with file extension with String indexOf
+              method. Usage of try...catch with IO operations. Usage of methods of File
+              class to find parent directory and absolute path. Using of main method
+              args parameters for the command line operation.
+FileListFilter.java
+              Example of implementation of FilenameFilter interface, which
+              is Java SDK interface in the java.io package.
+AvoidOverwritingFile.java
+              Generates '_old' end before the file extension to rename the
+              old file before writing the contents of a new file.
+WriteAString.java
+              Creates file with String content using File,ByteBuffer and
+              Channel.
+WriteAStringAsBytes.java
+              Creates file with String content using File,ByteBuffer and
+              Channel first changing String to an byte array.
+WriteProverbs.java
+              Creates file from String contents and their lengths using
+              putInt and put methods of ByteBugger thus making mixed content
+              binary file.               
+FormattedInput.java
+              Example of StreamTokenizer to read different types of data from 
+              BufferedInputStream: int, double and String
+   - uses InvalidUserInputException.java         
+PrimesToFile.java
+   - calculates prime values and uses ByteBuffer and LongBuffer to save the values
+     into binary file and demonstrate different buffer techniques       
+PrimesToFile2.java
+   - calculates prime values and uses Character, DoubleBuffer and LongBuffer to save the values
+     into binary file and demonstrate different buffer techniques
+PrimesToFile3.java
+   - calculates prime values and uses even in third way the buffers to save the data into 
+     binary file
+RandomFileRead.java
+RandomReadWrite.java
+ReadPrimes.java
+ReadPrimesMixedData.java
+ReadPrimesMixedData2.java
+GatheringWrite.java
+GuaranteeAFile.java
+LockingPrimesRead.java
+TestFormattedInput.java
+- uses FormattedInput
+TestFormattedOutput.java
+- uses FormattedInput
+InvalidUserInputException.java - exception class used by FormattedInput.java
+
+
+
+Object Oriented programming:
+-----------------------------------------------------------------------------------
+              
+Interface examples:
+---------------------------
+ConversionFactors.java  - interface to gather some constants of physical unit conversions
+Conversions.java        - interface of some physical unit conversion methods
+RemoteControl.java      - interface to define methods for using a remote control
+
+Implementing interfaces:
+-------------------------
+TryConversions.java - implements ConversionFactors methods and uses constants defined in
+                      Conversions interface ( implementing Conversions interface ).
+                      Does some example calculations with conversion methods.
+TV.java             - implements RemoteControl interface
+VCR.java            - implements RemoteControl interface
+TryRemoteControl.java - creates TV and VCR objects randomly to RemoteControl references
+                        and uses those remote controls through it. 
+
+Class examples:
+--------------------------
+
+Animals:
+-----------
+Animal.java
+Cat.java
+Dog.java
+Duck.java
+Crowd.java
+Spaniel.java
+
+- overridden method sound, Animal as the base class and others as derived classes
+
+Geometry:
+-----------
+Point.java
+  - simple class to have x and y coordinates and the distance of two point
+    objects ( Pythagora ) and move point with delta x and y values
+  - toString used to give valuable information about the object status 
+
+Line.java
+  - 2 dimensional line
+  - uses Point objects as member variables
+  - uses distance method of Point to calculate length of the line
+  - calculates intersection point of two 2-dimensional 
+     lines ( does not handle lines
+     with same direction or overlapping lines, when there is 0
+     or undetermined amount of intersection points )
+
+Others:
+-------
+Person.java
+
+Data structures:
+----------------
+- linked list:
+
+LinkedList.java
+   - uses ListItem.java
+   - classical linked list data structure with Java references between ListItem
+     objects                          
+ListItem.java
+   - linked objects of this class are linked together in LinkedList.java
+
+PolyLine.java
+   - uses LinePoint.java
+   - classical linked list data structure with Java references between LinePoint
+     objects                          
+LinePoint.java
+   - linked objects of this class are linked together in LinkedList.java
+   - uses Point class to save the actual x and y coordinates ( the actual point
+     data not the lines between them. Lines are implmented here as references
+     between LinePoint objects in the linked list ).
+
+Using these classes
+----------------------
+TryGeometry.java
+   -uses Line and Point objects
+TryPolyLine.java
+   -uses PolyLine objects.
+TryPolyMorphism.java
+   -uses the method sound of 
+    Dog,Cat,Duck and Spaniel objects through Animal base class.
+    Demonstrates that the sound method of the actual object not
+    the reference class is used when calling the sound method.    
+CreateSpheres.java      - creates Sphere objects, calculates their volumes and uses
+                          static ( not object related but class related ) count to
+                          show how many Sphere objects have been created
+   - uses Sphere.java
+
+TestDerived.java        - uses Dog class which is derived from Animal class and
+                          shows that the constructors and member value settings
+                          of Dog, not of Animal are used
+   - uses Dog.java, Animal.java
+
+
+
+
+Inner and static classes:
+---------------------------
+MagicHat.java
+    - static class Rabbit inside the outer class MagicHat 
+
+
+Using these
+-----------
+TryNestedClass.java
+
+
+              
+
+              
+
+        

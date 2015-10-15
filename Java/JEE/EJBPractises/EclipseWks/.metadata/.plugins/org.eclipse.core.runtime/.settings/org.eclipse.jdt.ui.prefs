@@ -1,0 +1,16 @@
+#Fri Jul 20 10:37:00 EEST 2007
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.templates_migrated=true
+tabWidthPropagated=true
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.exception.name=e
+useAnnotationsPrefPage=true
+org.eclipse.jface.textfont=1|Courier New|10|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+org.eclipse.jdt.ui.overrideannotation=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=8
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8"?><templates/>
+org.eclipse.jdt.ui.gettersetter.use.is=true
+eclipse.preferences.version=1
+internal.default.compliance=default
+fontPropagated=true

@@ -1,0 +1,6 @@
+// OwnDialog.cpp : Implementation of COwnDialog
+#include "stdafx.h"
+#include "OwnDialog.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// COwnDialog

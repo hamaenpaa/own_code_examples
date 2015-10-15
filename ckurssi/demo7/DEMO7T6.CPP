@@ -1,0 +1,1 @@
+void tuhoa_lopusta( char *s, int maara ){  int indeksi;  indeksi = strlen(s);  if (maara<=indeksi) { indeksi=indeksi-maara;s[indeksi]='\0'; }}void tuhoa_lopusta( string st, int maara ){  int indeksi;}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+  <title>Your Favorites</title>
+</h:head>
+<h:body>
+    <h:form id="favForm">
+        <h:panelGrid columns="3">
+            <h:outputText value="Favorite Food"></h:outputText>
+            <h:inputText id="favoriteFood" value="#{favorite.food}" required="true">
+            </h:inputText>
+            <h:message for="favoriteFood"/>
+
+            <h:outputText value="Favorite Beverage"></h:outputText>
+            <h:inputText id="favoriteBeverge" value="#{favorite.beverage}" required="true">
+            </h:inputText>
+            <h:message for="favoriteBeverge"/>
+
+            <h:outputText value="Favorite Sport"></h:outputText>
+            <h:inputText id="favoriteSport" value="#{favorite.sport}" required="true">
+            </h:inputText>
+            <h:message for="favoriteSport"/>
+        </h:panelGrid>
+        <h:commandButton value="Save my favorites" action="#{favorite.save}"/><br/><br/>
+    </h:form>
+</h:body>
+</html>

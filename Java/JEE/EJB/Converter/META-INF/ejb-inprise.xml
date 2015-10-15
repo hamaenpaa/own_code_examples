@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Cp1252"?>
+
+<!DOCTYPE inprise-specific PUBLIC '-//Inprise Corporation//DTD Enterprise JavaBeans 1.1//EN' 'http://www.borland.com/devsupport/appserver/dtds/ejb-inprise.dtd'>
+
+<inprise-specific>
+    
+  <enterprise-beans>
+    
+    <session>
+      <ejb-name>Converter</ejb-name>
+      <bean-home-name>MyConverter</bean-home-name>
+      <timeout>0</timeout>
+    </session>
+  </enterprise-beans>
+
+</inprise-specific>
+

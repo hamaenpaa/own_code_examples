@@ -1,0 +1,8 @@
+<jboss>
+   <enterprise-beans>
+      <session>
+         <ejb-name>TravelAgentBean</ejb-name>
+         <jndi-name>TravelAgentRemote</jndi-name>
+      </session>
+   </enterprise-beans>
+</jboss>

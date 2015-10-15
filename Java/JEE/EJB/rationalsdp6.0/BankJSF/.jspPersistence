@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+<jsp-scripting>
+        <session>
+            <variable name="customerSSN" type="java.lang.String"/>
+        <variable name="accountID" type="java.lang.String"/>
+        </session>
+    </jsp-scripting>
+<beanData/>
+</persistence>

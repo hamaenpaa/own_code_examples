@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<multisite-config>
+    <project-data name="BankJSF">
+        <data>
+            <item name="BankJSF" stamp="86"/>
+        </data>
+    </project-data>
+</multisite-config>

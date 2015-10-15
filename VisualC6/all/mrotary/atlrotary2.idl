@@ -1,0 +1,82 @@
+// atlrotary2.idl : IDL source for atlrotary2.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (atlrotary2.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(E119FD9B-F680-11D3-B4E3-9CE8F7073B36),
+		dual,
+		helpstring("IAtlRotaryCtl2 Interface"),
+		pointer_default(unique)
+	]
+	interface IAtlRotaryCtl2 : IDispatch
+	{
+		[propput, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([out,retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_BORDERCOLOR)]
+		HRESULT BorderColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_BORDERCOLOR)]
+		HRESULT BorderColor([out, retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_FILLCOLOR)]
+		HRESULT FillColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_FILLCOLOR)]
+		HRESULT FillColor([out, retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_FORECOLOR)]
+		HRESULT ForeColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_FORECOLOR)]
+		HRESULT ForeColor([out,retval]OLE_COLOR* pclr);
+		[propget, id(1), helpstring("property NumTicks")] HRESULT NumTicks([out, retval] short *pVal);
+		[propput, id(1), helpstring("property NumTicks")] HRESULT NumTicks([in] short newVal);
+		[propget, id(2), helpstring("property Ticks")] HRESULT Ticks([out, retval] BOOL *pVal);
+		[propput, id(2), helpstring("property Ticks")] HRESULT Ticks([in] BOOL newVal);
+	};
+
+[
+	uuid(E119FD8E-F680-11D3-B4E3-9CE8F7073B36),
+	version(1.0),
+	helpstring("atlrotary2 1.0 Type Library")
+]
+library ATLROTARY2Lib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(E119FD9D-F680-11D3-B4E3-9CE8F7073B36),
+		helpstring("_IAtlRotaryCtl2Events Interface")
+	]
+	dispinterface _IAtlRotaryCtl2Events
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method Click_In")] HRESULT Click_In([in] long x, [in] long y);
+	};
+
+	[
+		uuid(E119FD9C-F680-11D3-B4E3-9CE8F7073B36),
+		helpstring("AtlRotaryCtl2 Class")
+	]
+	coclass AtlRotaryCtl2
+	{
+		[default] interface IAtlRotaryCtl2;
+		[default, source] dispinterface _IAtlRotaryCtl2Events;
+	};
+
+	[
+		uuid(850476E2-F76B-11D3-B4E3-A1CAA7050736),
+		helpstring("AtlRotaryProp Class")
+	]
+	coclass AtlRotaryProp
+	{
+		interface IUnknown;
+	};
+};

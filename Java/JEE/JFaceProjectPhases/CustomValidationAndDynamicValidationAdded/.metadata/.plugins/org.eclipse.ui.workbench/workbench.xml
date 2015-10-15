@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<window height="564" width="800" x="0" y="0">
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="com.ibm.iwt.linksview.LinksView"/>
+</fastViewData>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="95" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.ibm.etools.egl.ui.EGLWebWizardActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.etools.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="82" y="22"/>
+<coolItem id="com.ibm.etools.j2ee.J2eeMainActionSet2" itemType="typeToolBarContribution" x="59" y="22"/>
+<coolItem id="com.ibm.etools.j2ee.J2eeMainActionSet4" itemType="typeToolBarContribution" x="36" y="22"/>
+<coolItem id="com.ibm.etools.rsc.extensions.RSCActionSet" itemType="typeToolBarContribution" x="82" y="22"/>
+<coolItem id="com.ibm.etools.sqlscripteditor.actions" itemType="typeToolBarContribution" x="36" y="22"/>
+<coolItem id="com.ibm.etools.sqlwizard.actions" itemType="typeToolBarContribution" x="36" y="22"/>
+<coolItem id="com.ibm.etools.subuilder.create.actions" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.etools.viewbuilder.actions" itemType="typeToolBarContribution" x="36" y="22"/>
+<coolItem id="com.ibm.etools.webedit.actionset.format" itemType="typeToolBarContribution" x="379" y="22"/>
+<coolItem id="com.ibm.etools.webservice.consumption" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.iwt.webtools.WebMainActionSet" itemType="typeToolBarContribution" x="59" y="22"/>
+<coolItem id="com.ibm.wtp.server.ui.new.actionSet" itemType="typeToolBarContribution" x="59" y="22"/>
+<coolItem id="com.rational.clearcase.ActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="425" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="59" y="22"/>
+<coolItem id="org_eclipse_ui_examples_readmetool_actionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="108" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.ibm.sse.editor.xml.StructuredTextEditorXML" itemType="typeToolBarContribution" x="36" y="22"/>
+<coolItem id="com.ibm.etools.webedit.editor.HTMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.ibm.etools.web.diagram.editor.WebDiagramEditor" itemType="typeToolBarContribution" x="334" y="22"/>
+<coolItem id="com.ibm.etools.webedit.editor.TemplateEditor" itemType="typeToolBarContribution" x="101" y="22"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - Web">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.ibm.etools.webedit.editor.TemplateEditor" name="BankJSFTemplate.jtpl" partName="BankJSFTemplate.jtpl" path="D:/IBM/rationalsdp6.0/workspaceJFace2/BankJSF/WebContent/BankJSFTemplate.jtpl" title="BankJSFTemplate.jtpl" tooltip="BankJSF/WebContent/BankJSFTemplate.jtpl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BankJSF/WebContent/BankJSFTemplate.jtpl"/>
+</editor>
+<editor activePart="true" focus="true" id="com.ibm.etools.web.diagram.editor.WebDiagramEditor" name="diagram.gph" partName="Web Diagram" path="D:/IBM/rationalsdp6.0/workspaceJFace2/BankJSF/diagram.gph" title="Web Diagram" tooltip="BankJSF/diagram.gph" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BankJSF/diagram.gph"/>
+</editor>
+<editor id="com.ibm.sse.editor.xml.StructuredTextEditorXML" name="faces-config.xml" partName="faces-config.xml" path="D:/IBM/rationalsdp6.0/workspaceJFace2/BankJSF/WebContent/WEB-INF/faces-config.xml" title="faces-config.xml" tooltip="BankJSF/WebContent/WEB-INF/faces-config.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BankJSF/WebContent/WEB-INF/faces-config.xml"/>
+</editor>
+</editors>
+<views>
+<view id="com.ibm.etools.rsc.ui.view.DBAExplorer" partName="Database Explorer">
+<viewState/>
+</view>
+<view id="com.ibm.wtp.server.ui.ServersView" partName="Servers"/>
+<view id="com.ibm.wtp.ui.ProjectNavigator" partName="Project Explorer">
+<viewState CommonNavigator.LINK_NAVIGATOR_TO_EDITOR="0"/>
+</view>
+<view id="com.ibm.sse.snippets.views.SnippetsView" partName="Snippets">
+<viewState/>
+</view>
+<view id="com.ibm.etools.rsc.ui.view.DBAResourceNavigator" partName="Data Definition">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState columnWidth0="19" columnWidth1="19" columnWidth2="223" columnWidth3="84" columnWidth4="167" columnWidth5="66" horizontalPosition="0" verticalPosition="0">
+<selection/>
+</viewState>
+</view>
+<view id="com.ibm.etools.outputview.OutputView" partName="DB Output"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="com.ibm.iwt.ui.thumbnailView" partName="Thumbnails"/>
+<view id="com.ibm.iwt.linksview.LinksView" partName="Links"/>
+<view id="com.ibm.iwt.ui.galleryView" partName="Gallery"/>
+<view id="com.ibm.etools.jsf.client.pagedataview.ClientDataView" partName="Client Data"/>
+<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator"/>
+<view id="com.ibm.etools.qev.view.QEVView" partName="Quick Edit">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
+<view id="com.ibm.etools.webtools.pagedataview.PageDataView" partName="Page Data">
+<viewState/>
+</view>
+<view id="com.ibm.etools.webedit.css.styleoutline" partName="Styles"/>
+<view id="org.eclipse.gef.ui.palette_view" partName="Palette">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState columnWidth0="19" columnWidth1="228" columnWidth2="85" columnWidth3="170" columnWidth4="68" horizontalPosition="0" verticalPosition="0">
+<selection/>
+</viewState>
+</view>
+</views>
+<perspectives activePart="com.ibm.etools.web.diagram.editor.WebDiagramEditor" activePerspective="com.ibm.etools.webtools.webperspective.WebToolsPerspective">
+<perspective editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.ibm.etools.j2ee.ui.J2EEPerspective" id="com.ibm.etools.j2ee.J2EEPerspective" label="J2EE"/>
+<actionSet id="com.ibm.esupport.client.ActionSet"/>
+<actionSet id="com.ibm.orca.updaterPlugin.actionSet"/>
+<actionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<actionSet id="com.ibm.rational.rup.eclipse.plugins.actionSet"/>
+<actionSet id="com.ibm.samplegallery.sampleGalleryActionSet"/>
+<actionSet id="com.ibm.01.tutorialgallery.tutorialGalleryActionSet"/>
+<actionSet id="org.eclipse.search.searchActionSet"/>
+<actionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.openExternalFile"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<actionSet id="org_eclipse_ui_examples_readmetool_actionSet"/>
+<actionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<actionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<actionSet id="com.ibm.etools.j2ee.J2eeMainActionSet"/>
+<actionSet id="com.ibm.etools.j2ee.J2eeMainActionSet2"/>
+<actionSet id="com.ibm.etools.j2ee.J2eeMainActionSet4"/>
+<actionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<actionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<actionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<actionSet id="com.ibm.etools.webservice.consumption"/>
+<actionSet id="com.rational.clearcase.ActionSet"/>
+<alwaysOnActionSet id="com.ibm.esupport.client.ActionSet"/>
+<alwaysOnActionSet id="com.ibm.orca.updaterPlugin.actionSet"/>
+<alwaysOnActionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<alwaysOnActionSet id="com.ibm.rational.rup.eclipse.plugins.actionSet"/>
+<alwaysOnActionSet id="com.ibm.samplegallery.sampleGalleryActionSet"/>
+<alwaysOnActionSet id="com.ibm.01.tutorialgallery.tutorialGalleryActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.openExternalFile"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org_eclipse_ui_examples_readmetool_actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="com.ibm.etools.j2ee.J2eeMainActionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.j2ee.J2eeMainActionSet2"/>
+<alwaysOnActionSet id="com.ibm.etools.j2ee.J2eeMainActionSet4"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.webservice.consumption"/>
+<alwaysOnActionSet id="com.rational.clearcase.ActionSet"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="com.ibm.wtp.ui.ProjectNavigator"/>
+<show_view_action id="com.ibm.wtp.server.ui.ServersView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.ibm.etools.server.tools.configuration"/>
+<show_view_action id="com.ibm.etools.server.tools.control"/>
+<show_view_action id="com.ibm.etools.rsc.ui.view.DBAResourceNavigator"/>
+<show_view_action id="com.ibm.etools.rsc.ui.view.DBAExplorer"/>
+<new_wizard_action id="com.ibm.wtp.j2ee.earProjectWizard"/>
+<new_wizard_action id="com.ibm.wtp.j2ee.appclientProjectWizard"/>
+<new_wizard_action id="com.ibm.wtp.j2ee.jcaProjectWizard"/>
+<new_wizard_action id="com.ibm.wtp.j2ee.webProjectWizard"/>
+<new_wizard_action id="com.ibm.wtp.ejb.ui.ejbProjectWizard"/>
+<new_wizard_action id="com.ibm.wtp.ejb.ui.createEJBWizard"/>
+<new_wizard_action id="com.ibm.etools.ejb.accessbean.wizards.creation.AccessBeanCreationWizard.ID"/>
+<new_wizard_action id="com.ibm.xtools.viz.ui.wizard.new.classdiagramfile"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="com.ibm.etools.rsc.ui.view.DBAPerspective"/>
+<perspective_action id="com.ibm.etools.server.tools.perspective"/>
+<perspective_action id="com.ibm.iwt.webtools.WebToolsPerspective"/>
+<perspective_action id="org.eclipse.vcm.ui.vcmPerspective"/>
+<perspective_action id="com.ibm.etools.trace.tracePerspective"/>
+<perspective_action id="com.ibm.etools.webtools.webperspective.WebToolsPerspective"/>
+<view id="com.ibm.wtp.ui.ProjectNavigator"/>
+<view id="com.ibm.sse.snippets.views.SnippetsView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="com.ibm.wtp.server.ui.ServersView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="com.ibm.wtp.ui.ProjectNavigator" appearance="2" expanded="2">
+<page content="com.ibm.wtp.ui.ProjectNavigator" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2f4b2f4b" ratio="0.7493606" ratioLeft="586" ratioRight="196" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2595908" ratioLeft="203" ratioRight="579" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.6593407" ratioLeft="300" ratioRight="155" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="com.ibm.wtp.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.6593407" ratioLeft="300" ratioRight="155" relationship="4" relative="topLeft">
+<folder activePageID="com.ibm.sse.snippets.views.SnippetsView" appearance="2" expanded="2">
+<page content="com.ibm.sse.snippets.views.SnippetsView" label="Snippets"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ve.internal.java.codegen.editorpart.BeansList" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.ibm.etools.webtools.webperspective.WebToolsPerspectiveFactory" id="com.ibm.etools.webtools.webperspective.WebToolsPerspective" label="Web"/>
+<actionSet id="com.ibm.esupport.client.ActionSet"/>
+<actionSet id="com.ibm.orca.updaterPlugin.actionSet"/>
+<actionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<actionSet id="com.ibm.rational.rup.eclipse.plugins.actionSet"/>
+<actionSet id="com.ibm.samplegallery.sampleGalleryActionSet"/>
+<actionSet id="com.ibm.01.tutorialgallery.tutorialGalleryActionSet"/>
+<actionSet id="org.eclipse.search.searchActionSet"/>
+<actionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.openExternalFile"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<actionSet id="org_eclipse_ui_examples_readmetool_actionSet"/>
+<actionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<actionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<actionSet id="com.ibm.iwt.webtools.WebMainActionSet"/>
+<actionSet id="com.ibm.wtp.server.ui.new.actionSet"/>
+<actionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<actionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<actionSet id="com.ibm.etools.egl.ui.EGLActionSet"/>
+<actionSet id="com.ibm.etools.egl.ui.EGLWebWizardActionSet"/>
+<actionSet id="com.rational.clearcase.ActionSet"/>
+<actionSet id="com.ibm.etools.webedit.actionset.format"/>
+<alwaysOnActionSet id="com.ibm.esupport.client.ActionSet"/>
+<alwaysOnActionSet id="com.ibm.orca.updaterPlugin.actionSet"/>
+<alwaysOnActionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<alwaysOnActionSet id="com.ibm.rational.rup.eclipse.plugins.actionSet"/>
+<alwaysOnActionSet id="com.ibm.samplegallery.sampleGalleryActionSet"/>
+<alwaysOnActionSet id="com.ibm.01.tutorialgallery.tutorialGalleryActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.openExternalFile"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org_eclipse_ui_examples_readmetool_actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="com.ibm.iwt.webtools.WebMainActionSet"/>
+<alwaysOnActionSet id="com.ibm.wtp.server.ui.new.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.egl.ui.EGLActionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.egl.ui.EGLWebWizardActionSet"/>
+<alwaysOnActionSet id="com.rational.clearcase.ActionSet"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.ibm.iwt.ui.thumbnailView"/>
+<show_view_action id="com.ibm.etools.jsf.client.pagedataview.ClientDataView"/>
+<show_view_action id="com.ibm.iwt.colorpalette.ColorPalette"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="com.ibm.etools.qev.view.QEVView"/>
+<show_view_action id="com.ibm.iwt.ui.galleryView"/>
+<show_view_action id="com.ibm.iwt.linksview.LinksView"/>
+<show_view_action id="com.ibm.etools.webtools.pagedataview.PageDataView"/>
+<show_view_action id="org.eclipse.gef.ui.palette_view"/>
+<show_view_action id="com.ibm.wtp.ui.ProjectNavigator"/>
+<show_view_action id="com.ibm.wtp.server.ui.ServersView"/>
+<show_view_action id="com.ibm.sse.snippets.views.SnippetsView"/>
+<show_view_action id="com.ibm.etools.webedit.css.styleoutline"/>
+<show_view_action id="com.ibm.etools.egl.views.partsReference.EGLPartsReference"/>
+<show_view_action id="com.ibm.etools.egl.view.EGLSQLResultsViewPart"/>
+<show_view_action id="com.ibm.etools.egl.internal.parteditor.EGLValidationResultsViewPart"/>
+<show_view_action id="com.ibm.etools.egl.view.EGLGenerationResultsViewPart"/>
+<show_view_action id="com.ibm.etools.egl.view.EGLInterpretiveDebugValidationErrorsViewPart"/>
+<new_wizard_action id="com.ibm.wtp.j2ee.webProjectWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.StaticWebProjectCreation"/>
+<new_wizard_action id="PortletProjectCreation.jsr168"/>
+<new_wizard_action id="PortletProjectCreation"/>
+<new_wizard_action id="com.ibm.etools.portaledit.internal.wizard.portal.CreatePortalProjectWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.HTMLWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.JSPWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.JSFWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webpage.template.PageTemplateWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.JScriptWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.CSSWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.ImageWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.ServletWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.FilterWebRegionWizard"/>
+<new_wizard_action id="com.ibm.etools.webtools.wizards.basic.ListenerWebRegionWizard"/>
+<new_wizard_action id="PortletCreation"/>
+<new_wizard_action id="com.ibm.etools.portaledit.internal.wizard.theme.NewThemeWizard"/>
+<new_wizard_action id="com.ibm.etools.portaledit.internal.wizard.skin.NewSkinWizard"/>
+<new_wizard_action id="com.ibm.egl.newpagewizard"/>
+<new_wizard_action id="com.ibm.etools.web.diagram.wizard.WebDiagramWizard"/>
+<perspective_action id="com.ibm.etools.webtools.webperspective.WebToolsPerspective"/>
+<perspective_action id="com.ibm.etools.rsc.ui.view.DBAPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="com.ibm.etools.j2ee.J2EEPerspective"/>
+<view id="com.ibm.wtp.ui.ProjectNavigator"/>
+<view id="com.ibm.iwt.ui.galleryView"/>
+<view id="com.ibm.etools.webtools.pagedataview.PageDataView"/>
+<view id="com.ibm.etools.jsf.client.pagedataview.ClientDataView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.ibm.etools.webedit.css.styleoutline"/>
+<view id="com.ibm.iwt.ui.thumbnailView"/>
+<view id="org.eclipse.gef.ui.palette_view"/>
+<view id="com.ibm.sse.snippets.views.SnippetsView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="com.ibm.etools.qev.view.QEVView"/>
+<view id="com.ibm.wtp.server.ui.ServersView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<fastViews>
+<view id="com.ibm.iwt.linksview.LinksView" ratio="0.75"/>
+</fastViews>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="com.ibm.wtp.ui.ProjectNavigator" appearance="2" expanded="2">
+<page content="com.ibm.wtp.ui.ProjectNavigator" label="Project Explorer"/>
+<page content="com.ibm.iwt.ui.galleryView" label="Gallery"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="com.ibm.etools.egl.views.partsReference.EGLPartsReference" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7493606" ratioLeft="586" ratioRight="196" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.16816431" ratioLeft="131" ratioRight="648" relationship="2" relative="topLeft"/>
+<info folder="true" part="topRight" ratio="0.73018867" ratioLeft="387" ratioRight="143" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.gef.ui.palette_view" appearance="2" expanded="2">
+<page content="org.eclipse.gef.ui.palette_view" label="Palette"/>
+<page content="com.ibm.sse.snippets.views.SnippetsView" label="Snippets"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomCenter" ratio="0.7032967" ratioLeft="320" ratioRight="135" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="com.ibm.etools.qev.view.QEVView" label="Quick Edit"/>
+<page content="com.ibm.wtp.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.ibm.iwt.colorpalette.ColorPalette" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<page content="com.ibm.etools.egl.view.EGLSQLResultsViewPart" label="LabelNotFound"/>
+<page content="com.ibm.etools.egl.internal.parteditor.EGLValidationResultsViewPart" label="LabelNotFound"/>
+<page content="com.ibm.etools.egl.view.EGLGenerationResultsViewPart" label="LabelNotFound"/>
+<page content="com.ibm.etools.egl.view.EGLInterpretiveDebugValidationErrorsViewPart" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.64835167" ratioLeft="295" ratioRight="160" relationship="4" relative="topLeft">
+<folder activePageID="com.ibm.etools.webtools.pagedataview.PageDataView" appearance="2" expanded="2">
+<page content="com.ibm.etools.webtools.pagedataview.PageDataView" label="Page Data"/>
+<page content="com.ibm.etools.jsf.client.pagedataview.ClientDataView" label="Client Data"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.ibm.etools.webedit.css.styleoutline" label="Styles"/>
+<page content="com.ibm.iwt.ui.thumbnailView" label="Thumbnails"/>
+<page content="org.eclipse.ve.internal.java.codegen.editorpart.BeansList" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.ibm.etools.rsc.extensions.ui.view.DBAPerspective" id="com.ibm.etools.rsc.ui.view.DBAPerspective" label="Data"/>
+<actionSet id="com.ibm.esupport.client.ActionSet"/>
+<actionSet id="com.ibm.orca.updaterPlugin.actionSet"/>
+<actionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<actionSet id="com.ibm.rational.rup.eclipse.plugins.actionSet"/>
+<actionSet id="com.ibm.samplegallery.sampleGalleryActionSet"/>
+<actionSet id="com.ibm.01.tutorialgallery.tutorialGalleryActionSet"/>
+<actionSet id="org.eclipse.search.searchActionSet"/>
+<actionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.openExternalFile"/>
+<actionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<actionSet id="org_eclipse_ui_examples_readmetool_actionSet"/>
+<actionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<actionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<actionSet id="com.ibm.etools.rsc.extensions.RSCActionSet"/>
+<actionSet id="com.ibm.etools.sqlscripteditor.actions"/>
+<actionSet id="com.ibm.etools.sqlwizard.actions"/>
+<actionSet id="com.ibm.etools.subuilder.create.actions"/>
+<actionSet id="com.ibm.etools.viewbuilder.actions"/>
+<actionSet id="com.rational.clearcase.ActionSet"/>
+<alwaysOnActionSet id="com.ibm.esupport.client.ActionSet"/>
+<alwaysOnActionSet id="com.ibm.orca.updaterPlugin.actionSet"/>
+<alwaysOnActionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<alwaysOnActionSet id="com.ibm.rational.rup.eclipse.plugins.actionSet"/>
+<alwaysOnActionSet id="com.ibm.samplegallery.sampleGalleryActionSet"/>
+<alwaysOnActionSet id="com.ibm.01.tutorialgallery.tutorialGalleryActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.openExternalFile"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org_eclipse_ui_examples_readmetool_actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="com.ibm.etools.rsc.extensions.RSCActionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.sqlscripteditor.actions"/>
+<alwaysOnActionSet id="com.ibm.etools.sqlwizard.actions"/>
+<alwaysOnActionSet id="com.ibm.etools.subuilder.create.actions"/>
+<alwaysOnActionSet id="com.ibm.etools.viewbuilder.actions"/>
+<alwaysOnActionSet id="com.rational.clearcase.ActionSet"/>
+<show_view_action id="com.ibm.etools.rsc.ui.view.DBAResourceNavigator"/>
+<show_view_action id="com.ibm.etools.rsc.ui.view.DBAExplorer"/>
+<show_view_action id="com.ibm.etools.outputview.OutputView"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="com.ibm.etools.rsc.extensions.ui.wizards.new.database"/>
+<new_wizard_action id="com.ibm.etools.rsc.extensions.ui.wizards.new.schema"/>
+<new_wizard_action id="com.ibm.etools.rsc.extensions.ui.wizards.new.table"/>
+<new_wizard_action id="com.ibm.etools.rsc.ui.wizards.new.sqlfile"/>
+<new_wizard_action id="com.ibm.etools.sqlwizard.SQLWizardNew"/>
+<new_wizard_action id="com.ibm.etools.subuilder.JavaSPWizard"/>
+<new_wizard_action id="com.ibm.etools.subuilder.SQLSPWizard"/>
+<new_wizard_action id="com.ibm.etools.subuilder.SQLUDFWizard"/>
+<new_wizard_action id="com.ibm.xtools.viz.ui.wizard.new.idef1xdiagramfile"/>
+<new_wizard_action id="com.ibm.xtools.viz.ui.wizard.new.iediagramfile"/>
+<new_wizard_action id="com.ibm.xtools.viz.ui.wizard.new.classdiagramfile"/>
+<perspective_action id="com.ibm.etools.xml.tools.XMLPerspective"/>
+<perspective_action id="com.ibm.etools.webtools.webperspective.WebToolsPerspective"/>
+<perspective_action id="com.ibm.etools.j2ee.J2EEPerspective"/>
+<view id="com.ibm.etools.rsc.ui.view.DBAResourceNavigator"/>
+<view id="org.eclipse.ui.views.ResourceNavigator"/>
+<view id="com.ibm.etools.rsc.ui.view.DBAExplorer"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="com.ibm.etools.outputview.OutputView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="com.ibm.etools.rsc.ui.view.DBAResourceNavigator" appearance="2" expanded="2">
+<page content="com.ibm.etools.rsc.ui.view.DBAResourceNavigator" label="Data Definition"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7493606" ratioLeft="586" ratioRight="196" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.24936062" ratioLeft="195" ratioRight="587" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.74945056" ratioLeft="341" ratioRight="114" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="com.ibm.etools.outputview.OutputView" label="DB Output"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.7495741" ratioLeft="440" ratioRight="147" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.5494506" ratioLeft="250" ratioRight="205" relationship="4" relative="topLeft">
+<folder activePageID="com.ibm.etools.rsc.ui.view.DBAExplorer" appearance="2" expanded="2">
+<page content="com.ibm.etools.rsc.ui.view.DBAExplorer" label="Database Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.TemplateEditor" path="/BankJSF/WebContent/BankJSFTemplate.jtpl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.web.diagram.editor.WebDiagramEditor" path="/BankJSF/diagram.gph"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.HTMLEditor" path="/BankJSF/WebContent/BankJSFLogin.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.HTMLEditor" path="/BankJSF/WebContent/BankJSFAccountDetails.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.HTMLEditor" path="/BankJSF/WebContent/BankJSFCustomerDetails.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.sse.editor.xml.StructuredTextEditorXML" path="/BankJSF/WebContent/WEB-INF/faces-config.xml"/>
+</editors>
+<item historyLabel="BankJSFTemplate.jtpl" index="0"/>
+<item historyLabel="Web Diagram" index="1"/>
+<item historyLabel="BankJSFLogin.jsp" index="2"/>
+<item historyLabel="Web Diagram" index="1"/>
+<item historyLabel="BankJSFAccountDetails.jsp" index="3"/>
+<item historyLabel="Web Diagram" index="1"/>
+<item historyLabel="BankJSFCustomerDetails.jsp" index="4"/>
+<item historyLabel="Web Diagram" index="1"/>
+<item historyLabel="faces-config.xml" index="5">
+<position/>
+</item>
+<item historyLabel="BankJSFTemplate.jtpl" index="0"/>
+<item active="true" historyLabel="Web Diagram" index="1"/>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.sse.editor.xml.StructuredTextEditorXML" name="faces-config.xml" tooltip="BankJSF/WebContent/WEB-INF/faces-config.xml">
+<persistable path="/BankJSF/WebContent/WEB-INF/faces-config.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.HTMLEditor" name="BankJSFCustomerDetails.jsp" tooltip="BankJSF/WebContent/BankJSFCustomerDetails.jsp">
+<persistable path="/BankJSF/WebContent/BankJSFCustomerDetails.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.HTMLEditor" name="BankJSFAccountDetails.jsp" tooltip="BankJSF/WebContent/BankJSFAccountDetails.jsp">
+<persistable path="/BankJSF/WebContent/BankJSFAccountDetails.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.HTMLEditor" name="BankJSFLogin.jsp" tooltip="BankJSF/WebContent/BankJSFLogin.jsp">
+<persistable path="/BankJSF/WebContent/BankJSFLogin.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.web.diagram.editor.WebDiagramEditor" name="diagram.gph" tooltip="BankJSF/diagram.gph">
+<persistable path="/BankJSF/diagram.gph"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.webedit.editor.TemplateEditor" name="BankJSFTemplate.jtpl" tooltip="BankJSF/WebContent/BankJSFTemplate.jtpl">
+<persistable path="/BankJSF/WebContent/BankJSFTemplate.jtpl"/>
+</file>
+</mruList>
+</workbench>

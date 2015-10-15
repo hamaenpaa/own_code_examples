@@ -1,0 +1,1 @@
+cJasen cJasen {  string nimi;  string lahiosoite  string postinumero;};class cKerho {  int maxmaara;  int lkm;  cJasen **jasenet;  int **kertoja;};

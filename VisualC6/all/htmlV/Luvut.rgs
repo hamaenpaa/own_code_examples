@@ -1,0 +1,26 @@
+HKCR
+{
+	Atl1.Luvut.1 = s 'Luvut Class'
+	{
+		CLSID = s '{E78F35B0-D57D-11D3-A757-00105A72C3E0}'
+	}
+	Atl1.Luvut = s 'Luvut Class'
+	{
+		CLSID = s '{E78F35B0-D57D-11D3-A757-00105A72C3E0}'
+		CurVer = s 'Atl1.Luvut.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E78F35B0-D57D-11D3-A757-00105A72C3E0} = s 'Luvut Class'
+		{
+			ProgID = s 'Atl1.Luvut.1'
+			VersionIndependentProgID = s 'Atl1.Luvut'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{E78F359F-D57D-11D3-A757-00105A72C3E0}'
+		}
+	}
+}

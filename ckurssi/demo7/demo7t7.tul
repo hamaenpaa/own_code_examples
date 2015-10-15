@@ -1,0 +1,41 @@
+toni:
+{
+  Nimi: Toni N
+  Nro:  3
+  tulos :
+  {
+    Lopputulos: 2.1241e-314
+    Kierros[0] :
+    {
+      Pituus:107
+      Tuomarien pisteet: 2.75859e-313 9.34153e-307 9.34192e-307 1.85234e-307 1.79957e-307
+      Pisteet:9.34129e-307
+    }
+    Kierros[1] :
+    {
+      Pituus:0
+      Tuomarien pisteet: 19 18 19.5 18 20
+      Pisteet:1.85234e-307
+    }
+  }
+
+matti:
+{
+  Nimi: Matti N
+  Nro:  7
+  {
+    Lopputulos: 251
+    Kierros[0] :
+    {
+      Pituus:-1.51801
+      Tuomarien pisteet: 1.07235e-314 2.86583e-313 2.7588e-313 1.79957e-307 9.34034e-307
+      Pisteet:125
+    }
+    Kierros[1] : 
+    {
+    Pituus:109
+    Tuomarien pisteet: 1.88883e-307 1.69792e-313 8.49006e-314 1.87079e-307 1.79077e-307
+    Pisteet:9.34192e-307
+    }
+  }
+}

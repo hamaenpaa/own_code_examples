@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+	<h:head>
+		<title>Oppilaat</title>
+	</h:head>
+	<h:body>
+		<h1>Oppilaat</h1>
+		<div>#{oppilas}</div>
+		<div style="color:red; font-style: italic"><h:messages/></div>
+		<h:form id="lomake">
+			<h:inputText name="id" value="#{oppilas.id}"></h:inputText>
+			<h:inputText name="nimi" value="#{oppilas.nimi}"></h:inputText>
+			<h:inputText name="koepisteet" value="#{oppilas.koepisteet}"></h:inputText>
+			<h:inputText name="demopisteet" value="#{oppilas.demopisteet}"></h:inputText>
+			<!--  commandButton pitää olla form:n sisällä  -->
+			<h:commandButton action="#{oppilaat.lisaaUusi()}" value="tallenna" id="painike"></h:commandButton>
+		</h:form>
+		<h1>Oppilaat järjestämättä</h1>
+		<h:dataTable value="#{oppilaat.oppilaat}" var="o" border="1">
+			<h:column>
+				<f:facet name="header">Id</f:facet>
+				#{o.id}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Nimi</f:facet>
+				#{o.nimi}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Koepisteet</f:facet>
+				#{o.koepisteet}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Demopisteet</f:facet>
+				#{o.demopisteet}
+			</h:column>
+		</h:dataTable>
+		<h1>Oppilaat järjestettynä</h1>
+		<h:dataTable value="#{oppilaat.jarjestetytOppilaat}" var="o" border="1">
+			<h:column>
+				<f:facet name="header">Id</f:facet>
+				#{o.id}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Nimi</f:facet>
+				#{o.nimi}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Koepisteet</f:facet>
+				#{o.koepisteet}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Demopisteet</f:facet>
+				#{o.demopisteet}
+			</h:column>
+		</h:dataTable>
+	</h:body>
+</html>

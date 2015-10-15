@@ -1,0 +1,34 @@
+HKCR
+{
+	Kokeilu.OmaCtl.1 = s 'OmaCtl Class'
+	{
+		CLSID = s '{A248D58E-E6F3-11D3-B4E3-E93332AC0136}'
+	}
+	Kokeilu.OmaCtl = s 'OmaCtl Class'
+	{
+		CLSID = s '{A248D58E-E6F3-11D3-B4E3-E93332AC0136}'
+		CurVer = s 'Kokeilu.OmaCtl.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A248D58E-E6F3-11D3-B4E3-E93332AC0136} = s 'OmaCtl Class'
+		{
+			ProgID = s 'Kokeilu.OmaCtl.1'
+			VersionIndependentProgID = s 'Kokeilu.OmaCtl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 102'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{A248D580-E6F3-11D3-B4E3-E93332AC0136}'
+			'Version' = s '1.0'
+		}
+	}
+}

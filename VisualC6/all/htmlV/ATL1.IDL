@@ -1,0 +1,57 @@
+// atl1.idl : IDL source for atl1.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (atl1.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(E78F35AB-D57D-11D3-A757-00105A72C3E0),
+		dual,
+		helpstring("IKokeilu Interface"),
+		pointer_default(unique)
+	]
+	interface IKokeilu : IDispatch
+	{
+		[id(1), helpstring("method LaskeLuvut3")] HRESULT LaskeLuvut3([retval, out] long *lp);
+	};
+	[
+		object,
+		uuid(E78F35AF-D57D-11D3-A757-00105A72C3E0),
+		dual,
+		helpstring("ILuvut Interface"),
+		pointer_default(unique)
+	]
+	interface ILuvut : IDispatch
+	{
+	};
+
+[
+	uuid(E78F359F-D57D-11D3-A757-00105A72C3E0),
+	version(1.0),
+	helpstring("atl1 1.0 Type Library")
+]
+library ATL1Lib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(E78F35AC-D57D-11D3-A757-00105A72C3E0),
+		helpstring("Kokeilu Class")
+	]
+	coclass Kokeilu
+	{
+		[default] interface IKokeilu;
+	};
+	[
+		uuid(E78F35B0-D57D-11D3-A757-00105A72C3E0),
+		helpstring("Luvut Class")
+	]
+	coclass Luvut
+	{
+		[default] interface ILuvut;
+	};
+};

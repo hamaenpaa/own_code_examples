@@ -1,0 +1,72 @@
+// kokeilu.idl : IDL source for kokeilu.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (kokeilu.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(A248D58D-E6F3-11D3-B4E3-E93332AC0136),
+		dual,
+		helpstring("IOmaCtl Interface"),
+		pointer_default(unique)
+	]
+	interface IOmaCtl : IDispatch
+	{
+		[propput, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([out,retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_FILLCOLOR)]
+		HRESULT FillColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_FILLCOLOR)]
+		HRESULT FillColor([out, retval]OLE_COLOR* pclr);
+		[propputref, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propput, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propget, id(DISPID_FONT)]
+		HRESULT Font([out, retval]IFontDisp** ppFont);
+		[propput, id(DISPID_CAPTION)]
+		HRESULT Caption([in]BSTR strCaption);
+		[propget, id(DISPID_CAPTION)]
+		HRESULT Caption([out,retval]BSTR* pstrCaption);
+		[propget, id(1), helpstring("property kokeiluomin")] HRESULT kokeiluomin([out, retval] long *pVal);
+		[propput, id(1), helpstring("property kokeiluomin")] HRESULT kokeiluomin([in] long newVal);
+	};
+
+[
+	uuid(A248D580-E6F3-11D3-B4E3-E93332AC0136),
+	version(1.0),
+	helpstring("kokeilu 1.0 Type Library")
+]
+library KOKEILULib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(A248D58F-E6F3-11D3-B4E3-E93332AC0136),
+		helpstring("_IOmaCtlEvents Interface")
+	]
+	dispinterface _IOmaCtlEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		uuid(A248D58E-E6F3-11D3-B4E3-E93332AC0136),
+		helpstring("OmaCtl Class")
+	]
+	coclass OmaCtl
+	{
+		[default] interface IOmaCtl;
+		[default, source] dispinterface _IOmaCtlEvents;
+	};
+};

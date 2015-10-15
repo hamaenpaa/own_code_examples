@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Container - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Container.res" /d "_DEBUG" /d "_AFXDLL" "D:\iio222\Esimerkit\RotaryMFC_Control\Container\Container.rc"" 
+Creating temporary file "C:\TEMP\RSP100F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Container.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\iio222\Esimerkit\RotaryMFC_Control\Container\Container.cpp"
+"D:\iio222\Esimerkit\RotaryMFC_Control\Container\ContainerDlg.cpp"
+"D:\iio222\Esimerkit\RotaryMFC_Control\Container\rotarymfc.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP100F.tmp" 
+Creating temporary file "C:\TEMP\RSP1010.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Container.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\iio222\Esimerkit\RotaryMFC_Control\Container\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSP1010.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Container.pdb" /debug /machine:I386 /out:"Debug/Container.exe" /pdbtype:sept  .\Debug\Container.obj .\Debug\ContainerDlg.obj .\Debug\rotarymfc.obj .\Debug\StdAfx.obj .\Debug\Container.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Container.cpp
+ContainerDlg.cpp
+rotarymfc.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Container.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

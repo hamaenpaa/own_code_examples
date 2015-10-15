@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee    http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd">
+<package-mapping>
+<package-type>com.titan.clients</package-type>
+<namespaceURI>http://travelagent.titan.com/jaws</namespaceURI>
+</package-mapping>
+<package-mapping>
+<package-type>com.titan.clients</package-type>
+<namespaceURI>http://domain.titan.com/jaws</namespaceURI>
+</package-mapping>
+<java-xml-type-mapping>
+<java-type>com.titan.clients.CreateCabin</java-type>
+<root-type-qname xmlns:typeNS="http://travelagent.titan.com/jaws">typeNS:createCabin</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>cabin</java-variable-name>
+<xml-element-name>Cabin</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.titan.clients.CreateCabinResponse</java-type>
+<root-type-qname xmlns:typeNS="http://travelagent.titan.com/jaws">typeNS:createCabinResponse</root-type-qname>
+<qname-scope>complexType</qname-scope>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.titan.clients.FindCabin</java-type>
+<root-type-qname xmlns:typeNS="http://travelagent.titan.com/jaws">typeNS:findCabin</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>ID</java-variable-name>
+<xml-element-name>ID</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.titan.clients.FindCabinResponse</java-type>
+<root-type-qname xmlns:typeNS="http://travelagent.titan.com/jaws">typeNS:findCabinResponse</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>cabin</java-variable-name>
+<xml-element-name>Cabin</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<java-xml-type-mapping>
+<java-type>com.titan.clients.Cabin</java-type>
+<root-type-qname xmlns:typeNS="http://domain.titan.com/jaws">typeNS:Cabin</root-type-qname>
+<qname-scope>complexType</qname-scope>
+<variable-mapping>
+<java-variable-name>bedCount</java-variable-name>
+<xml-element-name>bedCount</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>deckLevel</java-variable-name>
+<xml-element-name>deckLevel</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>id</java-variable-name>
+<xml-element-name>id</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>name</java-variable-name>
+<xml-element-name>name</xml-element-name>
+</variable-mapping>
+<variable-mapping>
+<java-variable-name>shipId</java-variable-name>
+<xml-element-name>shipId</xml-element-name>
+</variable-mapping>
+</java-xml-type-mapping>
+<service-interface-mapping>
+<service-interface>com.titan.clients.TravelAgentService</service-interface>
+<wsdl-service-name xmlns:serviceNS="http://travelagent.titan.com/jaws">serviceNS:TravelAgentService</wsdl-service-name>
+<port-mapping>
+<port-name>TravelAgentPort</port-name>
+<java-port-name>TravelAgentPort</java-port-name>
+</port-mapping>
+</service-interface-mapping>
+<service-endpoint-interface-mapping>
+<service-endpoint-interface>com.titan.clients.TravelAgent</service-endpoint-interface>
+<wsdl-port-type xmlns:portTypeNS="http://travelagent.titan.com/jaws">portTypeNS:TravelAgent</wsdl-port-type>
+<wsdl-binding xmlns:bindingNS="http://travelagent.titan.com/jaws">bindingNS:TravelAgentBinding</wsdl-binding>
+<service-endpoint-method-mapping>
+<java-method-name>createCabin</java-method-name>
+<wsdl-operation>createCabin</wsdl-operation>
+<wrapped-element/>
+<method-param-parts-mapping>
+<param-position>0</param-position>
+<param-type>com.titan.clients.Cabin</param-type>
+<wsdl-message-mapping>
+<wsdl-message xmlns:wsdlMsgNS="http://travelagent.titan.com/jaws">wsdlMsgNS:TravelAgent_createCabin</wsdl-message>
+<wsdl-message-part-name>Cabin</wsdl-message-part-name>
+<parameter-mode>IN</parameter-mode>
+</wsdl-message-mapping>
+</method-param-parts-mapping>
+</service-endpoint-method-mapping>
+<service-endpoint-method-mapping>
+<java-method-name>findCabin</java-method-name>
+<wsdl-operation>findCabin</wsdl-operation>
+<wrapped-element/>
+<method-param-parts-mapping>
+<param-position>0</param-position>
+<param-type>int</param-type>
+<wsdl-message-mapping>
+<wsdl-message xmlns:wsdlMsgNS="http://travelagent.titan.com/jaws">wsdlMsgNS:TravelAgent_findCabin</wsdl-message>
+<wsdl-message-part-name>ID</wsdl-message-part-name>
+<parameter-mode>IN</parameter-mode>
+</wsdl-message-mapping>
+</method-param-parts-mapping>
+<wsdl-return-value-mapping>
+<method-return-value>com.titan.clients.Cabin</method-return-value>
+<wsdl-message xmlns:wsdlMsgNS="http://travelagent.titan.com/jaws">wsdlMsgNS:TravelAgent_findCabinResponse</wsdl-message>
+<wsdl-message-part-name>Cabin</wsdl-message-part-name>
+</wsdl-return-value-mapping>
+</service-endpoint-method-mapping>
+</service-endpoint-interface-mapping>
+</java-wsdl-mapping>

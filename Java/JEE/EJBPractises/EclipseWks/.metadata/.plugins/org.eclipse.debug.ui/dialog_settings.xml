@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.debug.ui.SINGLE_LAUNCH_CONFIGURATION_DIALOG_SECTION">
+		<item key="org.eclipse.debug.ui.DIALOG_HEIGHT" value="560"/>
+		<item key="org.eclipse.debug.ui.DIALOG_WIDTH" value="620"/>
+		<item key="org.eclipse.debug.ui.DIALOG_ORIGIN_Y" value="0"/>
+		<item key="org.eclipse.debug.ui.DIALOG_ORIGIN_X" value="90"/>
+	</section>
+</section>

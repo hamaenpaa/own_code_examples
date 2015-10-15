@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-diagram PUBLIC "-//IBM//DTD Web Diagram 1.1//EN" "http://www.ibm.com/dtd/web-diagram_1_1.dtd">
+<web-diagram>
+    <properties/>
+    <nodes>
+        <node id="n0" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <description>The login page.</description>
+            <properties>
+                <property name="Web Page Path" value="/BankJSFLogin.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="107" y="60"/>
+        </node>
+        <node id="n1" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <description>Account details</description>
+            <properties>
+                <property name="Web Page Path" value="/BankJSFAccountDetails.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="297" y="184"/>
+        </node>
+        <node id="n2" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <description>Customer details and account overview</description>
+            <properties>
+                <property name="Web Page Path" value="/BankJSFCustomerDetails.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="291" y="60"/>
+        </node>
+        <node id="n3" type="com.ibm.etools.model2.faces.graphical.providers.model.ActionModelProvider">
+            <properties>
+                <property name="faces.action.name" value="Logout.logout"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="160" y="194"/>
+        </node>
+    </nodes>
+    <edges>
+        <edge source="n0" target="n2" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesOutcomeEdgeProvider">
+            <properties>
+                <property name="Faces Outcome Name" value="login"/>
+            </properties>
+        </edge>
+        <edge source="n3" target="n0" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesOutcomeEdgeProvider">
+            <properties>
+                <property name="Faces Outcome Name" value="logout"/>
+            </properties>
+        </edge>
+    </edges>
+</web-diagram>

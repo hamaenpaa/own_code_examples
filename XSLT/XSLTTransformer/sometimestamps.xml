@@ -1,0 +1,71 @@
+<sometimestamps>
+<dataset>
+	<timestamp>Tue Jan 31 22:08:54 EET 2006</timestamp>
+	<data>
+        <name>Data1</name>
+		<value>DS1Value1</value>
+	</data>
+	<data>
+        <name>Data2</name>
+		<value>DS1Value1</value>
+	</data>
+	<data>
+        <name>Data3</name>
+		<value>DS1Value3</value>
+	</data>
+	<data>
+        <name>Data4</name>
+		<value>DS1Value4</value>
+	</data>
+	<data>
+        <name>Data5</name>
+		<value>DS1Value5</value>
+	</data>
+</dataset>
+<dataset>
+	<timestamp>Tue Jan 31 22:09:27 EET 2006</timestamp>
+	<data>
+        <name>Data1</name>
+		<value>DS2Value1</value>
+	</data>
+	<data>
+        <name>Data2</name>
+		<value>DS2Value2</value>
+	</data>
+	<data>
+        <name>Data3</name>
+		<value>DS2Value3</value>
+	</data>
+	<data>
+        <name>Data4</name>
+		<value>DS2Value4</value>
+	</data>
+	<data>
+        <name>Data5</name>
+		<value>DS2Value5</value>
+	</data>
+</dataset>
+<dataset>
+	<timestamp>Tue Jan 31 22:09:45 EET 2006</timestamp>
+	<data>
+        <name>Data1</name>
+		<value>DS3Value1</value>
+	</data>
+	<data>
+        <name>Data2</name>
+		<value>DS3Value2</value>
+	</data>
+	<data>
+        <name>Data3</name>
+		<value>DS3Value3</value>
+	</data>
+	<data>
+        <name>Data4</name>
+		<value>DS3Value4</value>
+	</data>
+	<data>
+        <name>Data5</name>
+		<value>DS3Value5</value>
+	</data>
+</dataset>
+</sometimestamps>

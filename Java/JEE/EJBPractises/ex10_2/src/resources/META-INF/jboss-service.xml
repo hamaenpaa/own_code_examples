@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<server>
+
+   <mbean code="com.titan.stats.EntityStats"
+          name="oreilly-workbook:service=entity-stats"/>
+</server>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>
+	UML EJB tutorial</display-name>
+	<enterprise-beans>
+		<entity id="Author">
+			<ejb-name>Author</ejb-name>
+			<local-home>sample.AuthorLocalHome</local-home>
+			<local>sample.AuthorLocal</local>
+			<ejb-class>sample.AuthorBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>false</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>Author</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1145396552359">
+				<field-name>id</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1145396673328">
+				<field-name>name</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1145396680375">
+				<field-name>age</field-name>
+			</cmp-field>
+			<primkey-field>id</primkey-field>
+		</entity>
+		<entity id="Book">
+			<ejb-name>Book</ejb-name>
+			<local-home>sample.BookLocalHome</local-home>
+			<local>sample.BookLocal</local>
+			<ejb-class>sample.BookBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>false</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>Book</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1145402255093">
+				<field-name>id</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1145402788953">
+				<field-name>title</field-name>
+			</cmp-field>
+			<primkey-field>id</primkey-field>
+		</entity>
+	</enterprise-beans>
+	<ejb-client-jar>UML_EJB_tutorialClient.jar</ejb-client-jar>
+</ejb-jar>

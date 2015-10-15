@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RDBSchema="http:///com/ibm/etools/rdbschema.ecore" name="ACCOUNT" primaryKey="//@namedGroup.0">
+  <database href="BANKDB.dbxmi#/"/>
+  <schema href="BANKDB_ITSO.schxmi#/"/>
+  <columns xsi:type="RDBSchema:RDBColumn" name="BALANCE">
+    <type xsi:type="RDBSchema:SQLExactNumeric">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xsi:type="RDBSchema:RDBColumn" name="ID">
+    <type xsi:type="RDBSchema:SQLCharacterStringType" length="250">
+      <originatingType href="CLOUDSCAPE_V51_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <namedGroup xsi:type="RDBSchema:SQLReference" name="PK_ACCOUNT" members="//@columns.1" constraint="//@constraints.0"/>
+  <constraints name="PK_ACCOUNT" type="PRIMARYKEY" primaryKey="//@namedGroup.0"/>
+</RDBSchema:RDBTable>

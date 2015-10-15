@@ -1,0 +1,52 @@
+<definitions 
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:tns="http://ns.soacookbook.com/credit" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://schemas.xmlsoap.org/wsdl/" 
+targetNamespace="http://ns.soacookbook.com/credit" 
+name="CreditService">
+    
+<types>
+<xsd:schema>
+<xsd:import namespace="http://ns.soacookbook.com/credit" 
+  schemaLocation="Credit.xsd"/>
+</xsd:schema>
+</types>
+
+<message name="authorizeRequest">
+<part name="creditCard" element="tns:creditCard" />
+</message>
+<message name="authorizeResponse">
+<part name="authorization" element="tns:authorization" />
+</message>
+
+<portType name="CreditAuthorizer">
+<operation name="authorize">
+<input message="tns:authorizeRequest" />
+<output message="tns:authorizeResponse" />
+</operation>
+</portType>
+
+<binding name="CreditAuthorizerPortBinding" 
+  type="tns:CreditAuthorizer">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" 
+  style="document" />
+<operation name="authorize">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
+</binding>
+
+<service name="CreditService">
+<port name="CreditAuthorizerPort" 
+  binding="tns:CreditAuthorizerPortBinding">
+<soap:address 
+  location="http://localhost:8080/WebServiceComplexSchema/CreditService" />
+</port>
+</service>
+</definitions>

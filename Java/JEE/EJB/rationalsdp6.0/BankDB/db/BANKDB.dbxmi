@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBDatabase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="http:///com/ibm/etools/rdbschema.ecore" name="BANK" comments="">
+  <schemata href="BANKDB_ITSO.schxmi#/"/>
+  <tableGroup href="BANKDB_ITSO_CUSTOMER.tblxmi#/"/>
+  <tableGroup href="BANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi#/"/>
+  <tableGroup href="BANKDB_ITSO_TRANSACTION1.tblxmi#/"/>
+  <tableGroup href="BANKDB_ITSO_ACCOUNT.tblxmi#/"/>
+  <domain href="CLOUDSCAPE_V51_Domain.xmi#SQLVendor_1"/>
+</RDBSchema:RDBDatabase>

@@ -1,0 +1,311 @@
+/* vstring */
+/****************************************************************************/
+/*
+** string-luokan osoittainen toteutus k„„nt„j„„n jossa ko. luokkaa ei ole.
+**
+**  Tekij„t:          Vesa Lappalainen
+**                    Ohjelmointikurssi 1996
+**  Tehty:            09.12.1995
+**  Korjattu:         15.03.1996/vl
+**  Mit„ korjattu:    lis„tty metodi varaa1 ja konstruktorit ja
+**                    isonna_koko k„ytt„m„„n t„t„
+**                    varaa-metodi poistaa ensin vanhan tilan
+**  Korjattu:         24.10.1996/vl
+**  Mit„ korjattu:    lis„tty <,>,<=,>= ja lis„ksi sekalainen m„„r„
+**                    operattoreita toiminaan, mm. s = "Alku " + s2;
+**                    korjattu trimmaa ja insert toimimaan oikein
+**                    read_line poistettu
+**                    getlinessa tarvitaan loppumerkki
+**  Korjattu:         20.1.1998/vl
+**  Mit„ korjattu:    string::npos, find ja alkeellinen rfind
+**
+** Yksinkertainen string-luokka joka korvataan paremmalla.
+** Oikeastihan ANSI:n mukaan t„llainen pit„isi jo tulla k„„nt„j„n mukana.
+** T„m„ on toteutus mm. Turbo-C:t„ varten, jotta voidaan
+** tehd„ "standardin"-mukaisia ohjelmia.
+** Jos k„ytt„„ metodeja:
+**   insert tai find_last_of,
+** pit„„ linkitt„„ my”s mjonot.c ja vstring.cpp
+** sek„ m„„ritell„ vakio USE_VSTRING
+** Vakio pit„„ m„„ritell„ my”s jos t„m„ tiedosto otetaan mukaan useammassa
+** kuin yhdess„ modulissa.
+**
+*****************************************************************************/
+
+#ifndef __STRING
+#define __STRING
+#define vstring string
+#include <iostream.h>
+#include <string.h>
+#include "mjonot.h"
+
+
+#define using
+#define namespace
+#define std
+#define bool int
+#define false 0
+#define true (!false)
+
+const size_t NPOS = size_t(9999);
+
+//----------------------------------------------------------------------------
+class vstring {
+  char *cstr;
+  char tyhja[2]; // Tyhja paikka sit„ varten jos tilaa ei saada
+  size_t maxkoko;  // Varatun C-merkkijonon koko
+  size_t pituus;
+  int  varaa1(int koko=81)               { cstr = new char[koko]; maxkoko = 1;
+                                           tyhja[0] = 0;
+                                           if ( cstr ) {
+                                             cstr[0] = 0; maxkoko = koko; }
+                                           else cstr = tyhja;
+                                           pituus = 0;
+                                           return maxkoko;
+                                         }
+  int  varaa(int koko=81)                { poista();  return varaa1(koko);   }
+  void vapauta(char *p)                  { if ( p != NULL && p != tyhja )
+                                             delete [] p;
+                                         }
+  int poista()                           { if ( maxkoko ) vapauta(cstr);
+                                           maxkoko = 0; cstr = tyhja;
+                                           pituus = 0; return 0;
+                                         }
+  int tarkista_koko(size_t n)            { if ( n == maxkoko ) return 0;
+                                           return varaa(n);                  }
+  int isonna_koko(size_t n)              { if ( n <= maxkoko ) return 0;
+                                           char *p = cstr;
+                                           varaa1(n); copy(p);
+                                           vapauta(p);
+                                           return maxkoko;
+                                         }
+  void copy(const char *s2)              { strncpy(cstr,s2,maxkoko);
+                                           cstr[maxkoko-1] = 0;
+                                           pituus = strlen(cstr);
+                                         }
+  void ccopy(const char *s2)             { tarkista_koko(strlen(s2)+1);
+                                           copy(s2);
+                                         }
+  const char &merkki(size_t pos) const   { if ( pituus <= pos )
+                                             return tyhja[0];
+                                           return cstr[pos];
+                                         }
+  char &merkki(size_t pos)               { if ( pituus <= pos )
+                                             return tyhja[0];
+                                           return cstr[pos];
+                                         }
+  vstring &trimmaa(int i)                 { char *p = new char[i+1];
+                                           if ( p == NULL ) return *this;
+                                           strncpy(p,cstr,i+1); p[i] = 0;
+                                           vapauta(cstr);
+                                           cstr = p; pituus = strlen(cstr);
+                                           maxkoko = i+1;
+                                           return *this;
+                                         }
+public:
+  static const size_t npos;
+
+  vstring(int koko=31,char c=0)           { varaa1(koko); memset(cstr,c,koko);
+                                          }
+  vstring(const char *alustus)            { varaa1(strlen(alustus)+1);
+                                            copy(alustus);
+                                          }
+  vstring(const vstring &alustus)         { varaa1(alustus.maxkoko);
+                                            copy(alustus.cstr);
+                                          }
+  vstring(vstring &alustus)               { varaa1(alustus.maxkoko);
+                                            copy(alustus.cstr);
+                                          }
+  ~vstring()                              { poista();                         }
+  vstring &operator=(const vstring &s2)   { if ( this != &s2 ) ccopy(s2.cstr);
+                                            return *this;
+                                          }
+  vstring &operator=(const char *s2)      { ccopy(s2); return *this;          }
+
+  int compare(const char *s2,int n=NPOS) const { return strncmp(cstr,s2,n);   }
+  int compare(const vstring &s2,int n=NPOS) const { return compare(s2.cstr,n);}
+  int operator==(const char *s2) const    { return compare(s2) == 0;          }
+  int operator!=(const char *s2) const    { return compare(s2) != 0;          }
+  int operator==(const vstring &s2) const { return compare(s2.cstr) == 0;     }
+  int operator!=(const vstring &s2) const { return compare(s2.cstr) != 0;     }
+// read_line ei olekkaan mukana :-(
+//  istream &read_line(istream &is)         { vstring s(400,0);
+//                                            is.getline(s.cstr,s.maxkoko);
+//                                            ccopy(s.cstr); return is;
+//                                          }
+// EI saa tehd„ typecastia vstring => char * !!!
+//  operator const char *() const         { return cstr;                      }
+  const char *c_str() const               { return cstr;                      }
+  vstring &operator+=(const char *s2) {
+    isonna_koko(strlen(cstr)+strlen(s2)+1);
+//    liita_jono(cstr,maxkoko,s2);
+    strncat(cstr,s2,maxkoko-pituus-1);
+    pituus = strlen(cstr);
+    return *this;
+   }
+
+  vstring &operator+=(const vstring &s2)   { return operator+=(s2.cstr);      }
+
+  vstring &operator+=(char c)   {
+    char s2[2]; s2[0] = c; s2[1] = 0;
+    return operator+=(s2);
+   }
+
+  vstring operator+(const char *s2) const {
+    vstring s(strlen(cstr)+strlen(s2)+1,0);
+    s.copy(cstr);
+    return s+=s2;
+   }
+
+  char operator[](size_t pos) const      { return merkki(pos);               }
+  char &operator[](size_t pos)           { return merkki(pos);               }
+
+  unsigned length() const                { return pituus;                    }
+
+  vstring &remove(size_t pos, size_t n=NPOS);
+
+  size_t find_last_of(const vstring &s,size_t pos=NPOS) const;
+
+  vstring &insert(size_t pos, const char *s) {
+    int len = strlen(s) + pituus;
+    trimmaa(len);
+    lisaa_alkuun(cstr+pos,maxkoko-pos,s);
+    return *this;
+   }
+
+  vstring &insert(size_t pos, const vstring &st) {
+    return insert(pos, st.c_str());
+   }
+
+  friend istream &getline(istream &is,vstring &s,char end);
+
+  size_t find(char c, size_t i=0) {
+    int len = length();
+    if ( i > len ) return npos;
+    const char *p = strchr(cstr+i,c);
+    if ( !p ) return npos;
+    return size_t(p-(cstr+i));
+  }
+
+  size_t rfind(char c, size_t i=npos) {  // ei toteutettu kunnolla!
+    int len = length();
+    if ( i >= len ) i=len-1;
+    if ( i > 0 ) i = 0;                 // M$-temppu, etsii vain koko jonosta
+    const char *p = strrchr(cstr+i,c);
+    if ( !p ) return npos;
+    return size_t(p-(cstr+i));
+  }
+
+  vstring substr(size_t i=0, size_t n=npos) {
+    int len = length();
+    vstring ts(len);
+//    if ( i < 0 ) { n += i; i = 0; } // Ei ole negat i !
+    if ( n + i > len ) n = len - i;
+    if ( n <= 0 ) return ts;
+    strncpy(ts.cstr,cstr+i,n); ts.cstr[n] = 0;
+    ts.trimmaa(n);
+    return ts;
+  }
+};
+
+#ifndef USE_VSTRING
+const size_t vstring::npos = NPOS;
+#endif
+
+inline ostream &operator<<(ostream &os,const vstring &s) {
+  os << s.c_str();
+  return os;
+}
+
+inline istream &getline(istream &is,vstring &s,char end)
+{
+  vstring as(400,0);
+  is.getline(as.cstr,as.maxkoko,end);
+  s = as;
+  return is;
+}
+
+inline vstring operator+(const vstring &s1,const vstring &s2) {
+  vstring s(s1);
+  s += s2;
+  return s;
+}
+
+inline vstring operator+(const vstring &s1,char c) {
+  vstring s(s1);
+  s += c;
+  return s;
+}
+
+inline vstring operator+(char c, const vstring &s1) {
+  vstring s(s1);
+  char st[2]; st[1] = c; st[2] = 0;
+  s += st;
+  return s;
+}
+
+inline int compare(const char *s1,const char *s2,int n=0) {
+  return strncmp(s1,s2,n);
+}
+
+inline int operator==(const char *s1,const vstring &s2) {
+  return s2 == s1;
+}
+
+inline int operator!=(const char *s1,const vstring &s2) {
+  return s2 != s1;
+}
+
+
+inline int operator<(const vstring &s1,const vstring &s2) {
+  return s1.compare(s2) < 0;
+}
+
+inline int operator>(const vstring &s1,const vstring &s2) {
+  return s1.compare(s2) > 0;
+}
+
+inline int operator<=(const vstring &s1,const vstring &s2) {
+  return s1.compare(s2) <= 0;
+}
+
+inline int operator>=(const vstring &s1,const vstring &s2) {
+  return s1.compare(s2) >= 0;
+}
+
+
+inline int operator<(const char *s1,const vstring &s2) {
+  return s2.compare(s1) > 0;
+}
+
+inline int operator>(const char *s1,const vstring &s2) {
+  return s2.compare(s1) < 0;
+}
+
+inline int operator<=(const char *s1,const vstring &s2) {
+  return s2.compare(s1) >= 0;
+}
+
+inline int operator>=(const char *s1,const vstring &s2) {
+  return s2.compare(s1) <= 0;
+}
+
+inline void vpoista_alusta(char *s,int n)
+{
+  if ( s == NULL ) return;
+  /* Jos poistetaan enemm„n merkkej„ kuin jonon pituus                      */
+  if ( (int)strlen(s) <= n ) { s[0] = 0; }
+
+  int len = strlen(s+n);
+  memmove(s,s+n,len+1);
+}
+
+inline vstring &vstring::remove(size_t pos, size_t n)
+{
+  if ( pos >= pituus ) return *this;
+  if ( pos + n >= pituus ) return trimmaa(pos);
+  vpoista_alusta(cstr+pos,n);
+  return trimmaa(pituus-n);
+}
+
+#endif // __STRING

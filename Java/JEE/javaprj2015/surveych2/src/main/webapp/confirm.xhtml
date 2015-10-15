@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+<ui:composition template="/WEB-INF/templates/simple.xhtml">
+    <ui:define name="title">
+        #{bundle['survey.confirm.page']}
+    </ui:define>
+    <ui:define name="content">
+        <h:form>
+            <h:outputText value="#{bundle['survey.information.confirm']}"/>
+           <h:panelGrid columns="2">
+                <h:outputText value="#{bundle['survey.user.name']}"/>
+                <h:outputText value="#{flash.keep.userName}"/>
+
+                <h:outputText value="#{bundle['survey.user.age']}"/>
+                <h:outputText value="#{flash.keep.age}"/>
+
+                <h:outputText value="#{bundle['survey.user.sex']}"/>
+                <h:outputText value="#{flash.keep.sex}"/>
+
+                <h:outputText value="#{bundle['survey.user.monthyIncome']}"/>
+                <h:outputText value="#{flash.keep.monthlyIncome}"/>
+
+                <h:outputText value="#{bundle['survey.user.yearlyTravelAbroad']}"/>
+                <h:outputText value="#{flash.keep.travelsAbroad}"/>
+
+                <h:outputText value="#{bundle['survey.user.oftenTravelBy']}"></h:outputText>
+                <h:outputText value="#{flash.keep.travelBy}"/>
+            </h:panelGrid>
+            <h:commandButton value="#{bundle['survey.actions.save']}"
+                             action="#{survey.save}"/>
+            <h:commandButton value="#{bundle['survey.actions.modify']}"
+                             action="input?faces-redirect=true"/>
+            <br/><br/>
+        </h:form>
+    </ui:define>
+</ui:composition>
+
+</html>

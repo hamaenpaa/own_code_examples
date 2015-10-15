@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="UnCtypter/|Geometry/|Collection Classes/|Serialize Objects/" kind="src" path=""/>
+	<classpathentry kind="src" path="Collection Classes"/>
+	<classpathentry kind="src" path="Geometry"/>
+	<classpathentry kind="src" path="Serialize Objects"/>
+	<classpathentry kind="src" path="UnCtypter"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

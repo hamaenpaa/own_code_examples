@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ADO_Cont2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40b /fo"Debug/ADO_Cont2.res" /d "_DEBUG" /d "_AFXDLL" "D:\iio-222\Esimerkit\ADO_Cont2\ADO_Cont2.rc"" 
+Creating temporary file "C:\TEMP\RSPDBC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ADO_Cont2.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"D:\iio-222\Esimerkit\ADO_Cont2\ADO_Cont2.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\ADO_Cont2Dlg.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\fields.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\field.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\adodc.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\font.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\properties.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\property.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\_recordset.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\datagrid.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\columns.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\split.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\dataformatdisp.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\stddataformatsdisp.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\column.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\splits.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\selbookmarks.cpp"
+"D:\iio-222\Esimerkit\ADO_Cont2\picture.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSPDBC.tmp" 
+Creating temporary file "C:\TEMP\RSPDBD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/ADO_Cont2.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"D:\iio-222\Esimerkit\ADO_Cont2\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSPDBD.tmp" 
+Creating temporary file "C:\TEMP\RSPDBE.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ADO_Cont2.pdb" /debug /machine:I386 /out:"Debug/ADO_Cont2.exe" /pdbtype:sept 
+".\Debug\ADO_Cont2.obj"
+".\Debug\ADO_Cont2Dlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ADO_Cont2.res"
+".\Debug\fields.obj"
+".\Debug\field.obj"
+".\Debug\adodc.obj"
+".\Debug\font.obj"
+".\Debug\properties.obj"
+".\Debug\property.obj"
+".\Debug\_recordset.obj"
+".\Debug\datagrid.obj"
+".\Debug\columns.obj"
+".\Debug\split.obj"
+".\Debug\dataformatdisp.obj"
+".\Debug\stddataformatsdisp.obj"
+".\Debug\column.obj"
+".\Debug\splits.obj"
+".\Debug\selbookmarks.obj"
+".\Debug\picture.obj"
+]
+Creating command line "link.exe @C:\TEMP\RSPDBE.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ADO_Cont2.cpp
+ADO_Cont2Dlg.cpp
+fields.cpp
+field.cpp
+adodc.cpp
+font.cpp
+properties.cpp
+property.cpp
+_recordset.cpp
+datagrid.cpp
+columns.cpp
+split.cpp
+dataformatdisp.cpp
+stddataformatsdisp.cpp
+column.cpp
+splits.cpp
+selbookmarks.cpp
+picture.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ADO_Cont2.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

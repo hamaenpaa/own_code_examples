@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ListV - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40b /fo"Release/ListV.res" /d "NDEBUG" /d "_AFXDLL" "C:\visualc\ListV\ListV.rc"" 
+Creating temporary file "c:\windows\TEMP\RSP9111.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ListV.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\visualc\ListV\ListV.cpp"
+"C:\visualc\ListV\MainFrm.cpp"
+"C:\visualc\ListV\ListVDoc.cpp"
+"C:\visualc\ListV\ListVView.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSP9111.TMP" 
+Creating temporary file "c:\windows\TEMP\RSP9112.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ListV.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\visualc\ListV\StdAfx.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSP9112.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/ListV.pdb" /machine:I386 /out:"Release/ListV.exe"  .\Release\ListV.obj .\Release\StdAfx.obj .\Release\MainFrm.obj .\Release\ListVDoc.obj .\Release\ListVView.obj .\Release\ListV.res "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ListV.cpp
+MainFrm.cpp
+ListVDoc.cpp
+ListVView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ListV.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core">
+ 
+<ui:composition template="/WEB-INF/templates/simple.xhtml">
+    <ui:define name="title">#{bundle['bundle.application.beveragestitle']}</ui:define>    
+    <ui:define name="content">
+        <h:form>
+            <h:outputText value="#{bundle.application.selectbeverage}" />:
+            <h:selectOneMenu value="#{beverage.name}"
+                            valueChangeListener="#{beverage.beverageSelected}"
+                            onchange="submit()">
+ 
+                <f:selectItem itemLabel="---" itemValue="---"/>
+                <f:selectItem itemLabel="#{bundle.application.beverageselectiontea}" itemValue="tea" />
+                <f:selectItem itemLabel="#{bundle.application.beverageselectioncoffee}" itemValue="coffee" />
+                <f:selectItem itemLabel="#{bundle.application.beverageselectioncocacola}" itemValue="cccacola" />
+            </h:selectOneMenu> 
+            <br/><br/>
+
+            <h:outputText value="#{bundle.application.youwillhavetopay} #{beverage.price} #{bundle.application.usd}"
+                          rendered="#{beverage.price ne null}"/>
+        </h:form>
+        <h:link value="#{bundle['application.beveragepage.return']}"
+                outcome="welcome"></h:link> <br/><br/>    
+    </ui:define>
+</ui:composition>
+</html>

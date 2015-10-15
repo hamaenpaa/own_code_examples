@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejb="ejb.xmi" xmlns:ejbbnd="ejbbnd.xmi" xmi:id="EJBJarBinding_1145395893546">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1145395893718" jndiName="ejb/sample/AuthorLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Author"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1145402237109" jndiName="ejb/sample/BookLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Book"/>
+  </ejbBindings>
+  <defaultCMPConnectionFactory xmi:id="CMPConnectionFactoryBinding_1145395893796" jndiName="jdbc/Default" resAuth="Per_Connection_Factory"/>
+</ejbbnd:EJBJarBinding>

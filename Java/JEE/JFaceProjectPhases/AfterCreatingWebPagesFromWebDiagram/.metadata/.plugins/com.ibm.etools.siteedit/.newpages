@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newpages>
+    <project name="BankJSF">
+        <item src="/WebContent/BankJSFCustomerDetails.jsp"/>
+        <item src="/WebContent/BankJSFAccountDetails.jsp"/>
+        <item src="/WebContent/BankJSFLogin.jsp"/>
+    </project>
+</newpages>

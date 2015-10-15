@@ -1,0 +1,73 @@
+// RotaryMFC.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (RotaryMFC.tlb) that will become a resource in
+// RotaryMFC.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(5F078F23-F19F-11D3-A8B6-A98D54C87C19), version(1.0),
+  helpfile("RotaryMFC.hlp"),
+  helpstring("RotaryMFC ActiveX Control module"),
+  control ]
+library ROTARYMFCLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CRotaryMFCCtrl
+
+	[ uuid(5F078F24-F19F-11D3-A8B6-A98D54C87C19),
+	  helpstring("Dispatch interface for RotaryMFC Control"), hidden ]
+	dispinterface _DRotaryMFC
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CRotaryMFCCtrl)
+			[id(DISPID_FORECOLOR), bindable, requestedit] OLE_COLOR ForeColor;
+			[id(1)] boolean TicksEnable;
+			[id(2)] short NumTicks;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CRotaryMFCCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CRotaryMFCCtrl
+
+	[ uuid(5F078F25-F19F-11D3-A8B6-A98D54C87C19),
+	  helpstring("Event interface for RotaryMFC Control") ]
+	dispinterface _DRotaryMFCEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CRotaryMFCCtrl)
+			[id(1)] void Repositioned(double dNewPosition);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CRotaryMFCCtrl
+
+	[ uuid(5F078F26-F19F-11D3-A8B6-A98D54C87C19),
+	  helpstring("RotaryMFC Control"), control ]
+	coclass RotaryMFC
+	{
+		[default] dispinterface _DRotaryMFC;
+		[default, source] dispinterface _DRotaryMFCEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

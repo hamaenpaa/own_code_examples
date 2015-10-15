@@ -1,0 +1,26 @@
+[jaejakso]
+Jaejakso on yksitt„inen Raamatunkohta, joka sis„lt„„ yhden tai useamman
+per„tt„isen jakeen.
+
+[viite]
+Viite on kahden tai useamman jaejakson muodostama kokonaisuus.
+
+[rinnakkais]
+Rinnakkaisjaejaksot/viitteet ovat sellaisia Raamatun paikkoja, jotka
+ovat t„ysin samanlaisia tai melko samoja kesken„„n.
+
+[editoiminen]
+T„ss„ ohjelmassa sinulla on mahdollisuus editoida sy”tt„mi„si tietoja
+tietyiss„ teksti kentiss„. Sin„ voit k„ytt„„ nuolin„pp„imi„ liikkumiseen,
+insert eli korvaustilaa ja delete ja <- n„pp„int„.
+
+[jaejakson sy”tt”]
+    Jaejakson alku:
+ Kirjoita haluamasi jaejakso k„ytt„en j„rjestyslukuja
+ ALKUKIRJA ALKULUKU ALKUJAE ja paina enter.\n\n
+    Jaejakson loppu:
+ Olet editointitilassa ja edess„ on oletuksena jaejakson alku.
+ Sinun ei tarvitse kuin muuttaa niit„ tietoja,
+ jotka ovat erilaisia. Esim. jos jaejakso pysyy saman kirjan ja
+ luvun sis„ll„ sinun tarvitsee muuttaa vain jae.
+

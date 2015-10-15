@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-diagram PUBLIC "-//IBM//DTD Web Diagram 1.1//EN" "http://www.ibm.com/dtd/web-diagram_1_1.dtd">
+<web-diagram>
+    <properties/>
+    <nodes>
+        <node id="n0" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <description>Login page</description>
+            <properties>
+                <property name="Web Page Path" value="/BankJSFLogin.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="401" y="63"/>
+        </node>
+        <node id="n1" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <description>Customer details and account overview</description>
+            <properties>
+                <property name="Web Page Path" value="/BankJSFCustomerDetails.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="99" y="64"/>
+        </node>
+        <node id="n2" type="com.ibm.etools.model2.web.providers.model.WebPageProvider">
+            <description>Account details</description>
+            <properties>
+                <property name="Web Page Path" value="/BankJSFAccountDetails.jsp"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="104" y="241"/>
+        </node>
+        <node id="n3" type="com.ibm.etools.model2.faces.graphical.providers.model.ActionModelProvider">
+            <properties>
+                <property name="faces.action.name" value="Logout.logout"/>
+                <property name="hidden" value="false"/>
+            </properties>
+            <location x="411" y="240"/>
+        </node>
+    </nodes>
+    <edges>
+        <edge source="n2" target="n3" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesActionRefEdgeProvider">
+            <properties/>
+        </edge>
+        <edge source="n1" target="n3" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesActionRefEdgeProvider">
+            <properties/>
+        </edge>
+        <edge source="n2" target="n1" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesOutcomeEdgeProvider">
+            <properties>
+                <property name="Faces Outcome Name" value="customerDetails"/>
+            </properties>
+            <bendpoints>
+                <bendpoint weight="0.5">
+                    <dimensions>
+                        <dimension height="-92" width="59"/>
+                        <dimension height="81" width="22"/>
+                    </dimensions>
+                </bendpoint>
+            </bendpoints>
+        </edge>
+        <edge source="n3" target="n0" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesOutcomeEdgeProvider">
+            <properties>
+                <property name="Faces Outcome Name" value="logout"/>
+            </properties>
+        </edge>
+        <edge source="n0" target="n1" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesOutcomeEdgeProvider">
+            <properties>
+                <property name="Faces Outcome Name" value="login"/>
+            </properties>
+        </edge>
+        <edge source="n1" target="n2" type="com.ibm.etools.model2.faces.graphical.providers.edge.FacesOutcomeEdgeProvider">
+            <properties>
+                <property name="Faces Outcome Name" value="accountDetails"/>
+            </properties>
+            <bendpoints>
+                <bendpoint weight="0.5">
+                    <dimensions>
+                        <dimension height="86" width="-147"/>
+                        <dimension height="-87" width="-110"/>
+                    </dimensions>
+                </bendpoint>
+            </bendpoints>
+        </edge>
+    </edges>
+</web-diagram>

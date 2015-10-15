@@ -1,0 +1,53 @@
+package com.titan.domain;
+
+import javax.persistence.*;
+import java.util.*;
+
+
+@Entity
+@TableGenerator(name="CustomerGenerator")
+public class Customer implements java.io.Serializable
+{
+   private int id;
+   private String firstName;
+   private String lastName;
+   private boolean hasGoodCredit;
+
+   private Address address;
+   private Collection<Phone> phoneNumbers = new ArrayList<Phone>();
+   private CreditCard creditCard;
+   private Collection<Reservation> reservations = new ArrayList<Reservation>();
+
+   @Id
+   @GeneratedValue(strategy=GenerationType.TABLE, 
+                   generator="CustomerGenerator")
+   public int getId() { return id; }
+   public void setId(int id) { this.id = id; }
+
+   public String getFirstName() { return firstName; }
+   public void setFirstName(String firstName) { this.firstName = firstName; }
+
+   public String getLastName() { return lastName; }
+   public void setLastName(String lastName) { this.lastName = lastName; }
+
+   public boolean getHasGoodCredit() { return hasGoodCredit; }
+   public void setHasGoodCredit(boolean flag) { hasGoodCredit = flag; }
+
+   @OneToOne(cascade={CascadeType.ALL}, fetch=FetchType.LAZY)
+   @JoinColumn(name="ADDRESS_ID")
+   public Address getAddress() { return address; }
+   public void setAddress(Address address) { this.address = address; }
+
+   @OneToOne(cascade={CascadeType.ALL}, fetch=FetchType.LAZY)
+   public CreditCard getCreditCard() { return creditCard; }
+   public void setCreditCard(CreditCard card) { creditCard = card; }
+
+   @OneToMany(cascade={CascadeType.ALL})
+   @JoinColumn(name="CUSTOMER_ID")
+   public Collection<Phone> getPhoneNumbers() { return phoneNumbers; }
+   public void setPhoneNumbers(Collection<Phone> phones) { this.phoneNumbers = phones; }
+
+   @ManyToMany(mappedBy="customers", cascade=CascadeType.REFRESH)
+   public Collection<Reservation> getReservations() { return reservations; }
+   public void setReservations(Collection<Reservation> reservations) { this.reservations = reservations; }
+}

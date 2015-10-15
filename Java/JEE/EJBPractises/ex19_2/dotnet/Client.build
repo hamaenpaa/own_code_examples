@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="Client" default="build" basedir=".">
+  <target name="clean" description="remove all generated files">
+    <delete file="Client.exe" failonerror="false" />
+    <delete file="Client.pdb" failonerror="false" />
+  </target>
+  <target name="build" description="compiles the source code">
+    <csc target="exe" output="Client.exe" debug="true">
+      <sources>
+        <includes name="TravelAgentService.cs" />
+        <includes name="Client.cs" />
+      </sources>
+    </csc>
+  </target>
+</project>

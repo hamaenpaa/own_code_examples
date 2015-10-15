@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+ 
+<ui:composition template="/WEB-INF/templates/simple.xhtml">
+    <ui:define name="title">
+        #{bundle['application.welcomepage.title']}
+    </ui:define>
+    <ui:define name="content">
+        <h1><h:outputText value="#{bundle['user.totallabel1']}"></h:outputText></h1>
+        
+        <h2>#{bundle['application.welcome']}, #{user.name}! <h2/>
+
+        <h2><h:outputText value="#{application.youhavefavoritessportslabel}"></outputText>
+        <ul>
+            <c:forEach items="#{user.favoriteSport}" var="sport">
+                <c:choose>
+                  <c:when test="#{sport == 'Football'}">
+                      <li>
+                          <b><u><h:outputText value="#{bundle['application.popularinafrica']}"></outputText></u></b> 
+                          #{sport}
+                      </li>
+                  </c:when>
+                  <c:otherwise>
+                        <li>#{sport}</li>
+                  </c:otherwise>
+                </c:choose>
+            </c:forEach>
+        </ul>        
+
+        <h1><h:outputText value="#{bundle['user.totallabel2']}"></h:outputText></h1>
+        
+        <h2>#{bundle['application.welcome']}, #{user2.name}! <h2/>
+
+        <h2><h:outputText value="#{application.youhavefavoritessportslabel}"></outputText>
+        <ul>
+            <c:forEach items="#{user2.favoriteSport}" var="sport">
+                <c:choose>
+                  <c:when test="#{sport == 'Football'}">
+                      <li>
+                          <b><u><h:outputText value="#{bundle['application.popularinafrica']}"></outputText></u></b> 
+                          #{sport}
+                      </li>
+                  </c:when>
+                  <c:otherwise>
+                        <li>#{sport}</li>
+                  </c:otherwise>
+                </c:choose>
+            </c:forEach>
+        </ul>        
+                
+        <h1><h:outputText value="#{bundle['application.nextpage']}"></h:outputText></h1>
+        <h:form>
+            <h:selectOneMenu value="#{navigation.operselection}">
+                <f:selectItem itemLabel="{#bundle['application.nextpagebeverages']}" itemValue="1" />
+                <f:selectItem itemLabel="{#bundle['application.nextpagehttpheaders']}" itemValue="2" />
+                <f:selectItem itemLabel="{#bundle['application.nextpagemaths']}" itemValue="3" />
+            </h:selectOneMenu> 
+            <h:commandButton value="#{bundle['application.getnextpage']}" action="{navigation.getNextPage}"></h:commandButton> 
+        </h:form>        
+        
+        <h:link value="#{bundle['application.welcomepage.return']}"
+                outcome="index"></h:link> <br/><br/>
+                
+    </ui:define>
+</ui:composition>
+</html>

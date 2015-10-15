@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+ 
+<ui:composition template="/WEB-INF/templates/simple.xhtml">
+    <ui:define name="title">
+        #{bundle['survey.input.page']}
+    </ui:define>
+    <ui:define name="content">
+        <h:form>
+            <h:panelGrid columns="3">
+                <h:outputText value="#{bundle['survey.user.name']} "></h:outputText>
+                <h:inputText id="userName"
+                             value="#{flash.userName}"
+                             required="true">
+                </h:inputText>
+                <h:message for="userName" styleClass="errorMessage"/>
+                <h:outputText value="#{bundle['survey.user.age']}"></h:outputText>
+                <h:inputText id="age"
+                             value="#{flash.age}"
+                             required="true">
+                    <f:convertNumber />
+                </h:inputText>
+                <h:message for="age" styleClass="errorMessage"/>
+                <h:outputText value="#{bundle['survey.user.sex']}"></h:outputText>
+                <h:selectOneMenu id="sex"
+                                 value="#{flash.sex}">
+                    <f:selectItem itemLabel="Male" itemValue="male"/>
+                    <f:selectItem itemLabel="Female" itemValue="female"/>
+                </h:selectOneMenu>
+                <h:message for="sex" styleClass="errorMessage"/>
+
+                <h:outputText value="#{bundle['survey.user.monthyIncome']}"></h:outputText>
+                <h:inputText id="monthlyIncome"
+                             value="#{flash.monthlyIncome}"
+                             required="true">
+                    <f:convertNumber />
+                </h:inputText>
+                <h:message for="monthlyIncome" styleClass="errorMessage"/>
+
+                <h:outputText value="#{bundle['survey.user.yearlyTravelAbroad']}"></h:outputText>
+                <h:inputText id="yearlyTravelsAbroad"
+                             value="#{flash.travelsAbroad}"
+                             required="true">
+                    <f:convertNumber />
+                </h:inputText>
+                <h:message for="yearlyTravelsAbroad" styleClass="errorMessage"/>
+
+                <h:outputText value="#{bundle['survey.user.oftenTravelBy']}"></h:outputText>
+                <h:selectOneMenu id="travelBy"
+                                 value="#{flash.travelBy}">
+                    <f:selectItem itemLabel="#{bundle['survey.travelby.plane']}" itemValue="plane"/>
+                    <f:selectItem itemLabel="#{bundle['survey.travelby.car']}" itemValue="car"/>
+                </h:selectOneMenu>
+                <h:message for="travelBy" styleClass="errorMessage"/>
+
+            </h:panelGrid>
+            <h:commandButton value="#{bundle['survey.actions.next']}"
+                             action="confirm?faces-redirect=true"/>
+            <br/><br/>
+        </h:form>
+    </ui:define>
+</ui:composition>
+</html>

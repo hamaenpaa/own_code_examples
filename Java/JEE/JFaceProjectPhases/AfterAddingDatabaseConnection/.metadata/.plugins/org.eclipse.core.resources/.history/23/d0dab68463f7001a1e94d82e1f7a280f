@@ -1,0 +1,3 @@
+package com.ibm.bankjsf.actions;
+
+public class LogoutAction{}

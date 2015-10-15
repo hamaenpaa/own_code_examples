@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_AQUgoM8fEdqT7_dfsqRZCw" type="Class" name="UML.dnx">
+  <children xmi:id="_niuMMM8jEdqT7_dfsqRZCw">
+    <children xmi:id="_BA52wM8kEdqT7_dfsqRZCw" type="Stereotype">
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_BRAIQM8kEdqT7_dfsqRZCw" type="Kind">
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_B89PUM8kEdqT7_dfsqRZCw" type="Name">
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_CH1poM8kEdqT7_dfsqRZCw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CIIkkM8kEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_CJB8cM8kEdqT7_dfsqRZCw" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CJB8cc8kEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_CJB8cs8kEdqT7_dfsqRZCw" visible="false" type="RealizationListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CJB8c88kEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_CJU3YM8kEdqT7_dfsqRZCw" visible="false" type="RequiredInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CJU3Yc8kEdqT7_dfsqRZCw" filtering="Automatic" filteringKeys="Other interface"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_CJU3Ys8kEdqT7_dfsqRZCw" type="ProvidedInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_CKEeQM8kEdqT7_dfsqRZCw" filtering="Automatic" filteringKeys="Other interface"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_C9CMQM8kEdqT7_dfsqRZCw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_C9CMQc8kEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLComponentStyle" xmi:id="_uMcSMM8jEdqT7_dfsqRZCw" showStereotype="Label"/>
+    <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Author[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uNfbEM8jEdqT7_dfsqRZCw" x="926" y="1640"/>
+  </children>
+  <children xmi:id="_xwwIoM8yEdqT7_dfsqRZCw">
+    <children xmi:id="_x0VBEM8yEdqT7_dfsqRZCw" type="Stereotype">
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBEc8yEdqT7_dfsqRZCw" type="Kind">
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBEs8yEdqT7_dfsqRZCw" type="Name">
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBE88yEdqT7_dfsqRZCw" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_x0VBFM8yEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBFc8yEdqT7_dfsqRZCw" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_x0VBFs8yEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBF88yEdqT7_dfsqRZCw" visible="false" type="RealizationListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_x0VBGM8yEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBGc8yEdqT7_dfsqRZCw" visible="false" type="RequiredInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_x0VBGs8yEdqT7_dfsqRZCw" filtering="Automatic" filteringKeys="Other interface"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBG88yEdqT7_dfsqRZCw" type="ProvidedInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_x0VBHM8yEdqT7_dfsqRZCw" filtering="Automatic" filteringKeys="Other interface"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <children xmi:id="_x0VBHc8yEdqT7_dfsqRZCw" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_x0VBHs8yEdqT7_dfsqRZCw"/>
+      <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLComponentStyle" xmi:id="_xwwIoc8yEdqT7_dfsqRZCw" showStereotype="Label"/>
+    <element xmi:type="uml:Component" href="vizref:///#entityBean^vcore.target=uml2.Component^URI=platform%3a%2fresource%2fUML+EJB+tutorial%2fejbModule%2fMETA-INF%2fejb-jar.xml%23Book[project^vcore.target=uml2.Model^id=UML+EJB+tutorial]"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xwwIos8yEdqT7_dfsqRZCw" x="6996" y="2226"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_AQUgoc8fEdqT7_dfsqRZCw"/>
+</notation:Diagram>

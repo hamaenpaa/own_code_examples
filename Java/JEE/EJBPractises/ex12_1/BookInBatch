@@ -1,0 +1,6 @@
+#!/bin/sh
+# Books <count> passages for a Customer on a particular Cruise 
+# Uses command-line parameters:   
+# BookInBatch <cruiseID> <count>
+#
+ant run.bookinbatch -Dparam.cruise=$1 -Dparam.count=$2

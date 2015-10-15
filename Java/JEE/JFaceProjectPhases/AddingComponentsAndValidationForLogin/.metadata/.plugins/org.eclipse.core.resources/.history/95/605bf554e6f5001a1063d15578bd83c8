@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<websettings version="600">
+<webcontent>WebContent</webcontent>
+<context-root>BankJSF</context-root>
+</websettings>

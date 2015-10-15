@@ -1,0 +1,76 @@
+package hello;
+
+import java.util.*;
+import org.hibernate.*;
+import persistence.*;
+
+public class Message {
+	private Long id;
+	private String text;
+	private Message nextMessage;
+	
+	Message() {}
+	
+	public Message(String text) 
+	{
+		this.text = text;
+	}
+	
+	public Long getId() 
+	{
+		return id;
+	}
+	
+	private void setId(Long id) 
+	{
+		this.id = id;
+	}
+	
+	public String getText() 
+	{
+		return text;
+	}
+	
+	public void setText(String text) 
+	{
+		this.text = text;
+	}
+	
+	public Message getNextMessage() 
+	{
+		return nextMessage;
+	}
+	
+	public void setNextMessage(Message nextMessage) 
+	{
+		this.nextMessage = nextMessage;	
+	}
+	
+	public static void main(String[] args) 
+	{
+		// First unit of work
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction tx = session.beginTransaction();
+		Message message = new Message("Hello World");
+		Long msgId = (Long) session.save(message);
+		tx.commit();
+		session.close();
+		
+		// Second unit of work
+		Session newSession = HibernateUtil.getSessionFactory().openSession();
+		Transaction newTransaction = newSession.beginTransaction();
+		List messages =
+		newSession.createQuery("from Message m order by	? m.text asc").list();
+		System.out.println( messages.size() + " message(s) found:" );
+		for ( Iterator iter = messages.iterator(); iter.hasNext(); ) 
+		{
+			Message loadedMsg = (Message) iter.next();
+			System.out.println( loadedMsg.getText() );
+		}
+		newTransaction.commit();
+		newSession.close();
+		
+		// Shutting down the application
+		HibernateUtil.shutdown();
+	}	
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="G:/Ohjelmointi/Java/JBoss/JBoss420GA/jboss-4.2.0.GA/client/jboss-ejb3-client.jar"/>
+	<classpathentry kind="lib" path="G:/Ohjelmointi/Java/JBoss/JBoss420GA/jboss-4.2.0.GA/client/jboss-ejb3x.jar"/>
+	<classpathentry kind="lib" path="G:/Ohjelmointi/Java/JBoss/JBoss420GA/jboss-4.2.0.GA/client/jboss-j2ee.jar"/>
+	<classpathentry kind="lib" path="G:/Ohjelmointi/Java/JBoss/JBoss420GA/jboss-4.2.0.GA/client/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="G:/Ohjelmointi/Java/JBoss/JBoss420GA/jboss-4.2.0.GA/client/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="G:/Ohjelmointi/Java/JBoss/JBoss420GA/jboss-4.2.0.GA/client/hibernate-client.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

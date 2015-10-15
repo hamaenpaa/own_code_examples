@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="includes/style.css" type="text/css" media="screen" />
+<title><?php echo $page_title; ?></title>
+</head>
+<body>
+   <div id="header">
+       <h1>Your website</h1>
+	   <h2>catchy slogan...</h2>   	
+   </div>
+   <div id="navigation">
+   	  <ul>
+   	  	<li><a href="index.php">Home page</a></li>
+		<li><a href="calculator.php">Calculator</a></li>
+		<li><a href="dateform.php">Date form</a></li>
+		<li><a href="register.php">Register</a></li>
+		<li><a href="view_users.php">View users</a></li>
+		<li><a href="password.php">Change password</a></li>
+		<li>
+		<?php
+		   /* Create login or logout link */
+		   if (isset($_SESSION['user_id']) && 
+		       (!strpos($_SERVER['PHP_SELF'],"logout.php")))
+		       echo '<a href="logout.php">Logout</a>';
+		   else
+		       echo '<a href="login.php">Login</a>';
+		?>
+		</li>
+   	  </ul>
+   </div>
+   <div id="content"><!-- start of the page specific content -->

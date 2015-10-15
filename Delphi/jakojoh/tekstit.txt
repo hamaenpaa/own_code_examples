@@ -1,0 +1,183 @@
+1, 3 
+Lähdetään liikkeelle pohtimalla, kuinka paljonko
+kello on 213101 tunnin kuluttua, kun se lähtöhet-
+kellä on 12. Mitä vastaisit ?
+2, 1 
+Aivan oikein. Kello on 5.
+3, 2 
+Tuloksenhan saamme esimerkiksi 
+jakokulman avulla.
+4, 2 
+Ei aivan osunut oikeaan. 
+Katsotaanpa, mitä jakokulman avulla saadaan.
+5, 1 
+Kello on siis 213101 tunnin kuluttua 5.
+6, 3 
+Jakokulmassa lasku on kuitenkin melko työlästä, 
+eikö totta ? 
+Samaan tulokseen päästään myös seuraavasti:
+7, 2 
+Erotetaan luvusta kahden viimeisen 
+numeron muodostama luku.
+8, 1 
+Kerrotaan muut numerot neljällä.
+9, 2 
+Pyöritetään kellon viisaria saatujen 
+lukujen verran.
+10, 1 
+Kello näyttää 5:ttä kuten pitikin.
+11, 3 
+Mietitään nyt, miksi tämä tapa antaa oikean vastauksen. 
+Pohdipa ensin, paljonko kello on 100 tunnin kuluttua, 
+kun se lähtöhetkellä on 12.
+12, 1 
+Oikein meni. Hyvä.
+13, 1 
+Väärin meni. Mietipä uudestaan.
+14, 2 
+Vieläkin meni väärin. Katsotaanpa yhdessä, mitä 
+jakokulman avulla saadaan. 
+15, 1 
+100 tunnin kuluttua kello on siis 4. 
+16, 2 
+Mietipä sitten, paljonko kello on 200 tunnin
+kuluttua, kun se lähtöhetkellä on 12. 
+17, 2 
+Oikein meni, sillä 100 tuntia siirtää viisaria 
+4 tuntia eteenpäin ...
+18, 3 
+Väärin meni. Mietitäänpä yhdessä. Kuten 
+aikaisemmin huomasimme 100 tuntia siirtää
+viisaria 4 tuntia eteenpäin ...
+19, 2 
+... ja toinen 100 tuntia siirtää edelleen viisaria 
+4 tuntia eteenpäin.
+20, 3
+Joten 200 tunnin kuluttua viisari on siis 
+pyörähtänyt 4+4=8 tuntia eteenpäin eli
+kello on kahdeksan.
+21, 2 
+Kuinka paljon kello on 300 tunnin kuluttua, 
+kun se lähtöhetkellä on 12 ?
+22, 3 
+Oikein meni, sillä 300=100+100+100. 
+Ensimmäinen 100 tuntia siirtää viisaria 
+4 tuntia eteenpäin ...
+23, 5 
+Väärin meni. Mietitäänpä yhdessä. Voimme ratkaista 
+tehtävän, koska tiedämme, että 300=100+100+100 ja 
+jokainen 100 tuntia siirtää viisaria 4 tuntia eteenpäin. 
+Ensimmäinen 100 tuntia siirtää viisaria 4 tuntia 
+eteenpäin ...
+24, 2 
+... ja toinen 100 tuntia siirtää tästä viisaria 
+4 tuntia eteenpäin ...
+25, 2 
+... ja kolmas 100 tuntia siirtää edelleen viisaria 
+4 tuntia eteenpäin.
+26, 3 
+300 tunnin kuluttua viisari on siis
+pyörähtänyt 4+4+4=12 tuntia eteenpäin eli
+kello on 12.
+27, 3 
+Mietipä sitten, kuinka paljon kelloon 
+1000 tunnin kuluttua, kun se 
+lähtöhetkellä on 12.
+28, 2 
+Oikein, sillä 1000=10*100 ja jokainen 100 tuntia siirtää 
+viisaria 4 tuntia eteenpäin.
+29, 3 
+1000 tunnin kuluttua viisari on siis
+pyörähtänyt 10*4=40 tuntia,
+joten kello on 4.
+30, 3 
+Väärin meni. Mietitäänpä yhdessä. 
+Koska 1000=10*100 ja jokainen 100 tuntia siirtää viisaria 
+4 tuntia eteenpäin ...
+31, 3 
+... niin 1000 tunnin kuluttua viisari on 
+pyörähtänyt 10*4=40 tuntia. 
+Kello on siis 4.
+32, 4 
+Edellä tuli laskettua, paljonko kello on
+100 ja 1000 tunnin kuluttua, kun se alussa on 12.
+Lähdetään tutkimaan, mitä se on 
+10000, 100000, jne. tunnin kuluttua.
+33, 2 
+Paljonko kello siis on 10000 tunnin kuluttua, kun
+se lähtöhetkellä on 12 ?
+34, 2 
+Oikein, sillä 10000=10*1000 ja jokainen
+1000 tuntia siirtää viisaria 4 tuntia eteenpäin.
+35, 3
+10000 tunnin kuluttua viisari on siis 
+pyörähtänyt 10*4=40 tuntia, joten kello 
+on 4.
+36, 3
+Väärin meni. Mietitäänpä yhdessä.
+Koska 10000=10*1000 ja jokainen 1000 tuntia
+siirtää viisaria 4 tuntia eteenpäin ...
+37, 3
+... niin 10000 tunnin kuluttua viisari on
+pyörähtänyt 10*4=40 tuntia. 
+Kello on siis 4.
+38, 3
+Mietipä sitten, kuinka paljon kello on 
+100000 tunnin kuluttua, kun se 
+lähtöhetkellä on 12. 
+39, 2
+Oikein, sillä 100000=10*10000 ja jokainen 10000
+tuntia siirtää viisaria 4 tuntia eteenpäin.
+40, 3
+100000 tunnin kuluttua viisari on siis
+pyörähtänyt 10*4=40 tuntia, joten 
+kello on 4. 
+41, 3
+Väärin meni. Mietitäänpä yhdessä. 
+Koska 100000=10*10000  ja jokainen 10000
+tuntia siirtää viisaria 4 tuntia eteenpäin ...
+42, 3
+... niin 100000 tunnin kuluttua viisari on
+pyörähtänyt 10*4=40 tuntia.
+Kello on siis 4.
+43, 3
+Huomasimme siis, että 100, 1000, 10000, jne.
+tuntia siirtävät viisaria 4 tuntia eteenpäin. 
+Paljonkos kello on 3101 tunnin kuluttua ? 
+44, 3
+Oikein, sillä 3101=3000+100+1=3*1000+100+1.
+Jokainen 1000 tuntia siirtää viisaria 4 tuntia
+eteenpäin, joten 3000 tuntia siirtää 3*4=12 tuntia. 
+45, 4
+Väärin meni. Mietitäänpä yhdessä. Tiedämme, että
+3101=3000+100+1=3*1000+100+1.
+Jokainen 1000 tuntia siirtää viisaria 4 tuntia
+eteenpäin, joten 3000 tuntia siirtää 3*4=12 tuntia.
+46, 2
+100 tuntia siirtää edelleen viisaria 4 tuntia 
+eteenpäin.
+47, 1
+Lisäksi viisari siirtyy vielä yhden tunnin.
+48, 3
+Palataan nyt alkuperäiseen kysymykseemme eli paljonko
+kello on 213101 tunnin kuluttua, kun
+se lähtöhetkellä on 12 ?
+49, 4
+Oikein, sillä
+213101=200000+10000+3000+100+1=2*100000+1*10000+3*1000+1*100+1.
+Viisari pyörähtää siis 2*4+1*4+3*4+1*4+1=29 tuntia,
+joten kello on 5.
+50, 5
+Väärin meni. Mietitäänpä yhdessä. 
+Koska 213101=200000+10000+3000+100+1=
+2*100000+1*10000+3*1000+1*100+1, niin viisari
+pyörähtää 2*4+1*4+3*4+1*4+1=29 tuntia, joten kello
+on siis 5.
+51, 2
+Olemme löytäneet luvulle 12 niin sanotun jäännöstaulukon, jota 
+merkitsemme seuraavasti: 
+52, 3
+Jos siis haluamme selvittää, minkä tahansa luvun
+jakojäännöksen 12:lla jaettaessa, voimme käyttää
+jäännöstaulukkoa.
+

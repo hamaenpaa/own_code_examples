@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.ibm.com/xtools/1.5.0/Notation" xmlns:uml="http://www.eclipse.org/uml2/1.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.0/Umlnotation" xmi:id="_LjOM4C3TEdmWbJ_WZt8Yvg" type="Class" name="BankDBClassDiagram.dnx">
+  <children xmi:id="_rAqrOS3TEdmWbJ_WZt8Yvg" sourceEdges="_r-p9cC3TEdmWbJ_WZt8Yvg _wLB3QC3TEdmWbJ_WZt8Yvg _wLB3Ry3TEdmWbJ_WZt8Yvg _wLB3Ti3TEdmWbJ_WZt8Yvg _wLB3VS3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_rAqrPC3TEdmWbJ_WZt8Yvg" type="Stereotype">
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrPS3TEdmWbJ_WZt8Yvg" type="Kind">
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrPi3TEdmWbJ_WZt8Yvg" type="Name">
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrPy3TEdmWbJ_WZt8Yvg" visible="false" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_rAqrQC3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrQS3TEdmWbJ_WZt8Yvg" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_rAqrQi3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrQy3TEdmWbJ_WZt8Yvg" visible="false" type="RealizationListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_rAqrRC3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrRS3TEdmWbJ_WZt8Yvg" type="RequiredInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_rAqrRi3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrRy3TEdmWbJ_WZt8Yvg" type="ProvidedInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_rAqrSC3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <children xmi:id="_rAqrSS3TEdmWbJ_WZt8Yvg" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_rAqrSi3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLComponentStyle" xmi:id="_rAqrOi3TEdmWbJ_WZt8Yvg" showStereotype="Label"/>
+    <element xmi:type="uml:Component" href="vizref:///#database^vcore.target=uml2.Component^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rAqrOy3TEdmWbJ_WZt8Yvg" x="11443" y="9379"/>
+  </children>
+  <children xmi:id="_r-NRgC3TEdmWbJ_WZt8Yvg" sourceEdges="_wLLBMS3TEdmWbJ_WZt8Yvg _wLLBNC3TEdmWbJ_WZt8Yvg _wLLBNy3TEdmWbJ_WZt8Yvg _wLLBOi3TEdmWbJ_WZt8Yvg" targetEdges="_r-p9cC3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_r-NRgy3TEdmWbJ_WZt8Yvg" type="ImageCompartment">
+      <element xmi:type="uml:Package" href="vizref:///#schema^vcore.target=uml2.Package^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_r-NRhC3TEdmWbJ_WZt8Yvg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_r-NRhS3TEdmWbJ_WZt8Yvg" type="Stereotype">
+      <element xmi:type="uml:Package" href="vizref:///#schema^vcore.target=uml2.Package^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f"/>
+    </children>
+    <children xmi:id="_r-NRhi3TEdmWbJ_WZt8Yvg" type="Name">
+      <element xmi:type="uml:Package" href="vizref:///#schema^vcore.target=uml2.Package^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_r-NRgS3TEdmWbJ_WZt8Yvg" showStereotype="Label"/>
+    <element xmi:type="uml:Package" href="vizref:///#schema^vcore.target=uml2.Package^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r-NRgi3TEdmWbJ_WZt8Yvg" x="11681" y="1456"/>
+  </children>
+  <children xmi:id="_wGQsAC3TEdmWbJ_WZt8Yvg" targetEdges="_wLB3QC3TEdmWbJ_WZt8Yvg _wLLBMS3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wGZ18C3TEdmWbJ_WZt8Yvg" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_wGZ18S3TEdmWbJ_WZt8Yvg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_wGZ18i3TEdmWbJ_WZt8Yvg" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wGZ18y3TEdmWbJ_WZt8Yvg" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wGZ19C3TEdmWbJ_WZt8Yvg" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wGZ19S3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wGZ19i3TEdmWbJ_WZt8Yvg" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wGZ19y3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wGZ1-C3TEdmWbJ_WZt8Yvg" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wGZ1-S3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wGZ1-i3TEdmWbJ_WZt8Yvg" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_wGZ1-y3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wGQsAS3TEdmWbJ_WZt8Yvg" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wGQsAi3TEdmWbJ_WZt8Yvg" x="648" y="4326"/>
+  </children>
+  <children xmi:id="_wHmIwC3TEdmWbJ_WZt8Yvg" targetEdges="_wLB3VS3TEdmWbJ_WZt8Yvg _wLLBNC3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wHmIwy3TEdmWbJ_WZt8Yvg" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_wHmIxC3TEdmWbJ_WZt8Yvg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_wHmIxS3TEdmWbJ_WZt8Yvg" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wHmIxi3TEdmWbJ_WZt8Yvg" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wHmIxy3TEdmWbJ_WZt8Yvg" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wHmIyC3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wHmIyS3TEdmWbJ_WZt8Yvg" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wHmIyi3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wHmIyy3TEdmWbJ_WZt8Yvg" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wHmIzC3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wHmIzS3TEdmWbJ_WZt8Yvg" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_wHmIzi3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wHmIwS3TEdmWbJ_WZt8Yvg" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wHmIwi3TEdmWbJ_WZt8Yvg" x="4124" y="4336"/>
+  </children>
+  <children xmi:id="_wIVvoC3TEdmWbJ_WZt8Yvg" targetEdges="_wLB3Ti3TEdmWbJ_WZt8Yvg _wLLBOi3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wIVvoy3TEdmWbJ_WZt8Yvg" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_wIVvpC3TEdmWbJ_WZt8Yvg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_wIVvpS3TEdmWbJ_WZt8Yvg" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wIVvpi3TEdmWbJ_WZt8Yvg" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wIfgoC3TEdmWbJ_WZt8Yvg" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wIfgoS3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wIfgoi3TEdmWbJ_WZt8Yvg" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wIfgoy3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wIfgpC3TEdmWbJ_WZt8Yvg" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wIfgpS3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wIfgpi3TEdmWbJ_WZt8Yvg" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_wIfgpy3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wIVvoS3TEdmWbJ_WZt8Yvg" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wIVvoi3TEdmWbJ_WZt8Yvg" x="9610" y="4319"/>
+  </children>
+  <children xmi:id="_wJY4gC3TEdmWbJ_WZt8Yvg" targetEdges="_wLB3Ry3TEdmWbJ_WZt8Yvg _wLLBNy3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wJY4gy3TEdmWbJ_WZt8Yvg" type="ImageCompartment">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_wJY4hC3TEdmWbJ_WZt8Yvg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_wJY4hS3TEdmWbJ_WZt8Yvg" type="Stereotype">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wJY4hi3TEdmWbJ_WZt8Yvg" type="Name">
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wJY4hy3TEdmWbJ_WZt8Yvg" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wJY4iC3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wJY4iS3TEdmWbJ_WZt8Yvg" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wJY4ii3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wJY4iy3TEdmWbJ_WZt8Yvg" visible="false" type="SignalCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_wJY4jC3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+    </children>
+    <children xmi:id="_wJY4jS3TEdmWbJ_WZt8Yvg" visible="false" type="StructureCompartment">
+      <styles xmi:type="umlnotation:UMLShapeCompartmentStyle" xmi:id="_wJY4ji3TEdmWbJ_WZt8Yvg"/>
+      <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_wJY4gS3TEdmWbJ_WZt8Yvg" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="vizref:///#table^vcore.target=uml2.Class^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wJY4gi3TEdmWbJ_WZt8Yvg" x="12743" y="4329"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_LjOM4S3TEdmWbJ_WZt8Yvg"/>
+  <edges xmi:id="_r-p9cC3TEdmWbJ_WZt8Yvg" source="_rAqrOS3TEdmWbJ_WZt8Yvg" target="_r-NRgC3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_r-p9cy3TEdmWbJ_WZt8Yvg" type="NameLabel">
+      <children xmi:id="_r-p9dS3TEdmWbJ_WZt8Yvg" type="Stereotype">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][schema^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f]"/>
+      </children>
+      <children xmi:id="_r-p9di3TEdmWbJ_WZt8Yvg" type="Name">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][schema^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f]"/>
+      </children>
+      <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][schema^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_r-p9dC3TEdmWbJ_WZt8Yvg" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_r-p9cS3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][schema^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO.schxmi%23%2f]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r-p9ci3TEdmWbJ_WZt8Yvg" points="[-14, -820, -27, 7276]$[7394, -2407, 7381, 5689]$[7394, -5874, 7381, 2222]$[13, -7461, 0, 635]"/>
+  </edges>
+  <edges xmi:id="_wLB3QC3TEdmWbJ_WZt8Yvg" source="_rAqrOS3TEdmWbJ_WZt8Yvg" target="_wGQsAC3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wLB3Qy3TEdmWbJ_WZt8Yvg" type="NameLabel">
+      <children xmi:id="_wLB3RS3TEdmWbJ_WZt8Yvg" type="Stereotype">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f]"/>
+      </children>
+      <children xmi:id="_wLB3Ri3TEdmWbJ_WZt8Yvg" type="Name">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f]"/>
+      </children>
+      <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wLB3RC3TEdmWbJ_WZt8Yvg" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLB3QS3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_CUSTOMER.tblxmi%23%2f]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLB3Qi3TEdmWbJ_WZt8Yvg" points="[-14, -820, 10503, 3321]$[-10518, -2408, -1, 1733]"/>
+  </edges>
+  <edges xmi:id="_wLB3Ry3TEdmWbJ_WZt8Yvg" source="_rAqrOS3TEdmWbJ_WZt8Yvg" target="_wJY4gC3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wLB3Si3TEdmWbJ_WZt8Yvg" type="NameLabel">
+      <children xmi:id="_wLB3TC3TEdmWbJ_WZt8Yvg" type="Stereotype">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f]"/>
+      </children>
+      <children xmi:id="_wLB3TS3TEdmWbJ_WZt8Yvg" type="Name">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f]"/>
+      </children>
+      <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wLB3Sy3TEdmWbJ_WZt8Yvg" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLB3SC3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_TRANSACTION1.tblxmi%23%2f]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLB3SS3TEdmWbJ_WZt8Yvg" points="[-14, -820, -3532, 3321]$[3505, -2408, -13, 1733]"/>
+  </edges>
+  <edges xmi:id="_wLB3Ti3TEdmWbJ_WZt8Yvg" source="_rAqrOS3TEdmWbJ_WZt8Yvg" target="_wIVvoC3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wLB3US3TEdmWbJ_WZt8Yvg" type="NameLabel">
+      <children xmi:id="_wLB3Uy3TEdmWbJ_WZt8Yvg" type="Stereotype">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f]"/>
+      </children>
+      <children xmi:id="_wLB3VC3TEdmWbJ_WZt8Yvg" type="Name">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f]"/>
+      </children>
+      <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wLB3Ui3TEdmWbJ_WZt8Yvg" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLB3Ty3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNT.tblxmi%23%2f]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLB3UC3TEdmWbJ_WZt8Yvg" points="[-14, -820, 1706, 3321]$[-1734, -2408, -14, 1733]"/>
+  </edges>
+  <edges xmi:id="_wLB3VS3TEdmWbJ_WZt8Yvg" source="_rAqrOS3TEdmWbJ_WZt8Yvg" target="_wHmIwC3TEdmWbJ_WZt8Yvg">
+    <children xmi:id="_wLB3WC3TEdmWbJ_WZt8Yvg" type="NameLabel">
+      <children xmi:id="_wLB3Wi3TEdmWbJ_WZt8Yvg" type="Stereotype">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f]"/>
+      </children>
+      <children xmi:id="_wLLBMC3TEdmWbJ_WZt8Yvg" type="Name">
+        <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f]"/>
+      </children>
+      <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f]"/>
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wLB3WS3TEdmWbJ_WZt8Yvg" y="-185"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLB3Vi3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <element xmi:type="uml:Realization" href="vizref:///#realization^vcore.target=uml2.Realization[database^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB.dbxmi%23%2f][table^uri=platform%3a%2fresource%2fBankDB%2fdb%2fBANKDB_ITSO_ACCOUNTS_CUSTOMERS.tblxmi%23%2f]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLB3Vy3TEdmWbJ_WZt8Yvg" points="[-14, -820, 6019, 3321]$[-6046, -2408, -13, 1733]"/>
+  </edges>
+  <edges xmi:id="_wLLBMS3TEdmWbJ_WZt8Yvg" type="OwnedElement" source="_r-NRgC3TEdmWbJ_WZt8Yvg" target="_wGQsAC3TEdmWbJ_WZt8Yvg">
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLLBMi3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLLBMy3TEdmWbJ_WZt8Yvg" points="[0, 635, 10530, -3320]$[-10531, 2222, -1, -1733]"/>
+  </edges>
+  <edges xmi:id="_wLLBNC3TEdmWbJ_WZt8Yvg" type="OwnedElement" source="_r-NRgC3TEdmWbJ_WZt8Yvg" target="_wHmIwC3TEdmWbJ_WZt8Yvg">
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLLBNS3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLLBNi3TEdmWbJ_WZt8Yvg" points="[0, 635, 6046, -3320]$[-6059, 2222, -13, -1733]"/>
+  </edges>
+  <edges xmi:id="_wLLBNy3TEdmWbJ_WZt8Yvg" type="OwnedElement" source="_r-NRgC3TEdmWbJ_WZt8Yvg" target="_wJY4gC3TEdmWbJ_WZt8Yvg">
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLLBOC3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLLBOS3TEdmWbJ_WZt8Yvg" points="[0, 635, -3505, -3320]$[3492, 2222, -13, -1733]"/>
+  </edges>
+  <edges xmi:id="_wLLBOi3TEdmWbJ_WZt8Yvg" type="OwnedElement" source="_r-NRgC3TEdmWbJ_WZt8Yvg" target="_wIVvoC3TEdmWbJ_WZt8Yvg">
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_wLLBOy3TEdmWbJ_WZt8Yvg" showStereotype="Text"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wLLBPC3TEdmWbJ_WZt8Yvg" points="[0, 635, 1733, -3320]$[-1747, 2222, -14, -1733]"/>
+  </edges>
+</notation:Diagram>
