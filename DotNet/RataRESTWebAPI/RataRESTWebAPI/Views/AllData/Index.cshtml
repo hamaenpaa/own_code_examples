@@ -1,0 +1,559 @@
+﻿@section scripts{
+<script type="text/javascript">
+$(function()
+{
+    var queries = {};
+    $.each(document.location.search.substr(1).split('&'), function (c, q) {
+        var i = q.split('=');
+        queries[i[0].toString()] = i[1].toString();
+    });
+    var queryParamString = "?reload=false";
+    if (queries['reload'] == "true")
+        queryParamString = "?reload=true"
+
+    function giveWithoutZeroPrefix(str)
+    {
+        if (str.substr(0, 1) == "0")
+            return str.substr(1);
+        return str;
+    }
+
+    function getDispDateTime(jsonDate)
+    {
+        var year = jsonDate.substr(0, 4);
+        var month = giveWithoutZeroPrefix(jsonDate.substr(5, 2));
+        var dayOfMonth = giveWithoutZeroPrefix(jsonDate.substr(8, 2));
+        var hour = giveWithoutZeroPrefix(jsonDate.substr(11, 2));
+        var minute = jsonDate.substr(14, 2);
+        var seconds = jsonDate.substr(17, 2);
+        return dayOfMonth + "." + month + "." + year + " " + hour + ":" + minute + ":" + seconds;
+    }
+
+    function getDispDate(jsonDate) {
+        var year = jsonDate.substr(0, 4);
+        var month = giveWithoutZeroPrefix(jsonDate.substr(5, 2));
+        var dayOfMonth = giveWithoutZeroPrefix(jsonDate.substr(8, 2));
+        return dayOfMonth + "." + month + "." + year;
+    }
+
+
+    function toFixed(value, precision) {
+        var precision = precision || 0,
+            power = Math.pow(10, precision),
+            absValue = Math.abs(Math.round(value * power)),
+            result = (value < 0 ? '-' : '') + String(Math.floor(absValue / power));
+
+        if (precision > 0) {
+            var fraction = String(absValue % power),
+                padding = new Array(Math.max(precision - fraction.length, 0) + 1).join('0');
+            result += '.' + padding + fraction;
+        }
+        return result;
+    }
+
+    function emptyIfNullSameOtherwise(str) {
+        if (str == null || str == "null")
+            return "";
+        return str;
+    }
+
+    $.getJSON('/api/CategoryCodes' + queryParamString, function (categoryCodesJsonPayload)
+    {
+        $(categoryCodesJsonPayload).each(function (i, item)
+        {
+            $('#categoryCodesTblBody').append('<tr><td>' +
+                item.categoryCode +
+                "</td><td>" + 
+                item.categoryName +
+                '</td></tr>');
+        });
+    });
+
+    $.getJSON('/api/DetailedCategoryCodes' + queryParamString, function (detailedCategoryCodesJsonPayload) {
+        $(detailedCategoryCodesJsonPayload).each(function (i, item) {
+            $('#detailedCategoryCodesTblBody').append('<tr><td>' +
+                item.detailedCategoryCode +
+                "</td><td>" +
+                item.detailedCategoryName +
+                '</td></tr>');
+        });
+    });
+
+
+    $.getJSON('/api/Trains' + queryParamString, function (trainsJsonPayload) {
+        $(trainsJsonPayload).each(function (i, item) {
+            $('#trainsTblBody').append('<tr><td class="train_number">' +
+                         item.trainNumber +
+                         '</td><td class="departure_date">' +
+                         getDispDate(item.departureDate) +
+                         "</td><td>" +
+                         item.operatorUICCode +
+                         "</td><td>" +
+                         item.operatorShortCode +
+                         "</td><td>" +
+                         item.trainType +
+                         "</td><td>" +
+                         item.trainCategory +
+                         "</td><td>" +
+                         item.commuterLineID +
+                         "</td><td>" +
+                         item.runningCurrently +
+                         "</td><td>" +
+                         item.cancelled +
+                         "</td><td>" +
+                         item.version +
+                         "</td></tr>");
+        });
+    });
+
+    $.getJSON('/api/TimeTableRows', function (timeTableRowsJsonPayload) {
+        $(timeTableRowsJsonPayload).each(function (i, item) {
+            $('#timetablerowsTblBody').append('<tr><td>' +
+                         item.trainStopping +
+                         '</td><td class="station">' +
+                         item.stationShortCode +
+                         "</td><td>" +
+                         item.stationcUICCode +
+                         "</td><td>" +
+                         item.countryCode +
+                         "</td><td>" +
+                         item.type +
+                         "</td><td>" +
+                         item.commercialStop +
+                         "</td><td>" +
+                         item.commercialTrack +
+                         "</td><td>" +
+                         item.cancelled +
+                         "</td><td>" +
+                         getDispDateTime(item.scheduledTime) +
+                         "</td><td>" +
+                         getDispDateTime(item.actualTime) +
+                         "</td><td>" +
+                         getDispDateTime(item.liveEstimateTime) +
+                         "</td><td>" +
+                         item.differenceInMinutes +
+                         "</td></tr>");
+        });
+    });
+
+    $.getJSON('/api/TrainTrackings' + queryParamString, function (trainTrackingsJsonPayload) {
+        $(trainTrackingsJsonPayload).each(function (i, item) {
+            $('#traintrackingTblBody').append('<tr><td>' +
+                         item.id +
+                         '</td><td class="train_number">' +
+                         item.trainNumber +
+                         '</td><td class="departure_date">' +
+                         getDispDate(item.departureDate) +
+                         '</td><td class="timestamp">' +
+                         getDispDateTime(item.timestamp) +
+                         "</td><td>" +
+                         item.type +
+                         '</td><td class="track_section">' +
+                         emptyIfNullSameOtherwise(item.trackSection) +
+                         '</td><td class="next_track_section">' +
+                         emptyIfNullSameOtherwise(item.nextTrackSection) +
+                         '</td><td class="previous_track_section">' +
+                         emptyIfNullSameOtherwise(item.previousTrackSection) +
+                         "</td><td class='station'>" +
+                         emptyIfNullSameOtherwise(item.station) +
+                         '</td><td class="next_station">' +
+                         emptyIfNullSameOtherwise(item.nextStation) +
+                         '</td><td class="previous_station">' +
+                         emptyIfNullSameOtherwise(item.previousStation) +
+                         "</td><td>" +
+                         item.version +
+                         "</td></tr>");
+        });
+    });
+
+    $.getJSON('/api/Compositions' + queryParamString, function (compositionsJsonPayload) {
+        $(compositionsJsonPayload).each(function (i, item) {
+            $('#compositionsTblBody').append('<tr><td class="train_number">' +
+                         item.trainNumber +
+                         '</td><td class="departure_date">' +
+                         item.departureDate +
+                         "</td><td>" +
+                         item.operatorUICCode +
+                         "</td><td>" +
+                         item.operatorShortCode +
+                         "</td><td>" +
+                         item.trainType +
+                         "</td><td>" +
+                         item.trainCategory +
+                         "</td><td>" +
+                         item.version +
+                         "</td></tr>");
+
+        });
+    });
+    $.getJSON('/api/TrainNumbers', function (trainNumbersJsonPayload) {
+        $(trainNumbersJsonPayload).each(function (i, item) {
+            $('#trainNumbersTblBody').append('<tr><td>' +
+                         item.Id +
+                         "</td><td>" +
+                         item.bottomLimit +
+                         "</td><td>" +
+                         item.topLimit +
+                         "</td><td>" +
+                         item.trainCategory +
+                         "</td></tr>");
+        });
+    });
+    $.getJSON('/api/Stations' + queryParamString, function (stationsJsonPayload) {
+        $(stationsJsonPayload).each(function (i, item) {
+            $('#stationsTblBody').append('<tr><td>' +
+                         item.stationShortCode +
+                         "</td><td>" +
+                         item.stationUICCode +
+                         '</td><td class="station_name">' +
+                         item.stationName +
+                         "</td><td>" +
+                         item.type +
+                         "</td><td>" +
+                         item.countryCode +
+                         "</td><td>" +
+                         item.passengerTraffic +
+                         "</td><td>" +
+                         toFixed(item.longitude, 2) +
+                         "</td><td>" +
+                         toFixed(item.latitude, 2) +
+                         "</td></tr>");
+        });
+    });
+
+    $.getJSON('/api/Causes' + queryParamString, function (causesJsonPayload) {
+        $(causesJsonPayload).each(function (i, item) {
+            $('#causesTblBody').append('<tr><td>' +
+                         item.categoryCode +
+                         "</td><td>" +
+                         emptyIfNullSameOtherwise(item.detailedCategoryCode) +
+                         "</td></tr>");
+        });
+    });
+
+    $.getJSON('/api/Locomotives' + queryParamString, function (locoMotivesJsonPayload) {
+        $(locoMotivesJsonPayload).each(function (i, item) {
+            $('#locoMotivesTblBody').append('<tr><td>' +
+                         item.location +
+                         "</td><td>" +
+                         item.locomotiveType +
+                         "</td><td>" +
+                         item.powerType +
+                         "</td></tr>");
+        });
+    });
+
+    $.getJSON('/api/Wagons' + queryParamString, function (wagonsJsonPayload) {
+        $(wagonsJsonPayload).each(function (i, item) {
+            $('#wagonsTblBody').append('<tr><td>' +
+                         item.location +
+                         "</td><td>" +
+                         item.salesNumber +
+                         "</td><td>" +
+                         item.length +
+                         "</td><td>" +
+                         item.playground +
+                         "</td><td>" +
+                         item.pet +
+                         "</td><td>" +
+                         item.catering +
+                         "</td><td>" +
+                         item.video +
+                         "</td><td>" +
+                         item.luggage +
+                         "</td><td>" +
+                         item.smoking +
+                         "</td><td>" +
+                         item.disabled +
+                         "</td><td>" +
+                         item.wagonType +
+                         "</td></tr>");
+        });
+    });
+
+    $.getJSON('/api/Operators' + queryParamString, function (operatorsJsonPayload) {
+        $(operatorsJsonPayload).each(function (i, item) {
+            $('#operatorsTblBody').append('<tr><td>' +
+                         item.Id +
+                         "</td><td>" +
+                         item.operatorName +
+                         "</td><td>" +
+                         item.operatorShortCode +
+                         "</td><td>" +
+                         item.operatorUICCode +
+                         "</td></tr>");
+        });
+    });
+
+});
+
+</script>
+}
+
+<div class="page-header">
+    <h1>Train service all data</h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Categories</h2></div>
+            <div class="panel-body">
+                <div id="categoryCodes">
+                    <table id="categoryCodesTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Category code</th>
+                                <th>Category name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="categoryCodesTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Detailed category codes</h2></div>
+            <div class="panel-body">
+                <div id="detailedCategoryCodes">
+                    <table id="detailedCategoryCodesTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Detailed category code</th>
+                                <th>Detailed category name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="detailedCategoryCodesTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Trains</h2></div>
+            <div class="panel-body">
+                <div id="trains">
+                    <table id="trainsTbl" border="1">
+                       <thead>
+                           <tr>
+                               <th class="train_number">Train number</th>
+                               <th class="departure_date">Departure date</th>
+                               <th>Operator UIC Code</th>
+                               <th>Operator short code</th>
+                               <th>Train type</th>
+                               <th>Train category</th>
+                               <th>Commuter line ID</th>
+                               <th>Running currently</th>
+                               <th>Cancelled</th>
+                               <th>Version</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trainsTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+       </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Time table rows</h2></div>
+            <div class="panel-body">
+                <div id="timetablerows">
+                    <table id="timetablerowsTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Train stopping</th>
+                                <th>Station short code</th>
+                                <th>Station UIC code</th>
+                                <th>Country code</th>
+                                <th>Type</th>
+                                <th>Commercial stop</th>
+                                <th>Commercial track</th>
+                                <th>Cancelled</th>
+                                <th>Scheduled time</th>
+                                <th>Actual time</th>
+                                <th>Live estimate</th>
+                                <th>Difference in minutes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timetablerowsTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Train trackings</h2></div>
+            <div class="panel-body">
+                <div id="traintrackings">
+                    <table id="traintrackingTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th class="train_number">Train number</th>
+                                <th class="departure_date">Departure date</th>
+                                <th class="timestamp">Timestamp</th>
+                                <th>Type</th>
+                                <th class="track_section">Track section</th>
+                                <th class="next_track_section">Next track section</th>
+                                <th class="previous_track_section">Previous track section</th>
+                                <th class="station">Station</th>
+                                <th class="next_station">Next station</th>
+                                <th class="previous_station">Previous station</th>
+                                <th>Version</th>
+                            </tr>
+                        </thead>
+                        <tbody id="traintrackingTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Compositions</h2></div>
+            <div class="panel-body">
+                <div id="compositions">
+                    <table id="compositionsTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th class="train_number">Train number</th>
+                                <th class="departure_date">Departure date</th>
+                                <th>Operator UIC Code</th>
+                                <th>Operator short code</th>
+                                <th>Train type</th>
+                                <th>Train category</th>
+                                <th>Version</th>
+                            </tr>
+                        </thead>
+                        <tbody id="compositionsTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Train numbers</h2></div>
+            <div class="panel-body">
+                <div id="trainNumbers">
+                    <table id="trainNumbersTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Bottom limit</th>
+                                <th>Top limit</th>
+                                <th>Train category</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trainNumbersTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Stations</h2></div>
+            <div class="panel-body">
+                <div id="stations">
+                    <table id="stationsTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Station short code</th>
+                                <th>Station UIC code</th>
+                                <th class="station_name">Station name</th>
+                                <th>Type</th>
+                                <th>Country code</th>
+                                <th>Passenger traffic</th>
+                                <th>Longitude</th>
+                                <th>Latitude</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stationsTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Causes</h2></div>
+            <div class="panel-body">
+                <div id="causes">
+                    <table id="causesTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Category code</th>
+                                <th>Detailed category code</th>
+                            </tr>
+                        </thead>
+                        <tbody id="causesTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Locomotives</h2></div>
+            <div class="panel-body">
+                <div id="locoMotives">
+                    <table id="locoMotivesTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Location</th>
+                                <th>Type</th>
+                                <th>Power type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="locoMotivesTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Wagons</h2></div>
+            <div class="panel-body">
+                <div id="wagons">
+                    <table id="wagonsTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Location</th>
+                                <th>Sales number</th>
+                                <th>Length</th>
+                                <th>Playground</th>
+                                <th>Pet</th>
+                                <th>Catering</th>
+                                <th>Video</th>
+                                <th>Luggage</th>
+                                <th>Smoking</th>
+                                <th>Disabled</th>
+                                <th>Wagon type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="wagonsTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_width panel panel-default">
+            <div class="panel-heading"><h2 class="panel-title">Operators</h2></div>
+            <div class="panel-body">
+                <div id="operators">
+                    <table id="operatorsTbl" border="1">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Operator name</th>
+                                <th>Operator short code</th>
+                                <th>Operator UIC code</th>
+                            </tr>
+                        </thead>
+                        <tbody id="operatorsTblBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+       <div class="alert alert-danger" data-bind="visible: error"><p data-bind="text: error"></p></div>
+    </div>
+</div>
