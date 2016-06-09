@@ -35,7 +35,7 @@ namespace RataTrafficGetDataConsole
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            Database.SetInitializer<TrainsModel>(new DropCreateDatabaseAlways<TrainsModel>());
+            Database.SetInitializer<TrainsModel>(new DropCreateDatabaseIfModelChanges<TrainsModel>());
 
 
             // Configure Code First to ignore PluralizingTableName convention 
