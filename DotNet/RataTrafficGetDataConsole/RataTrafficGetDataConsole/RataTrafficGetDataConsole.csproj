@@ -69,6 +69,7 @@
     <Compile Include="CategoryCode.cs" />
     <Compile Include="Cause.cs" />
     <Compile Include="Composition.cs" />
+    <Compile Include="DbUtils.cs" />
     <Compile Include="DetailedCategoryCode.cs" />
     <Compile Include="JourneySection.cs" />
     <Compile Include="Locomotive.cs" />
@@ -77,16 +78,21 @@
     <Compile Include="OwnDateTimeConverter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RESTOthers.cs" />
+    <Compile Include="RESTTrainsAndStations.cs" />
     <Compile Include="Station.cs" />
     <Compile Include="TimeTableRow.cs" />
     <Compile Include="TrainNumbers.cs" />
     <Compile Include="Trains.cs" />
     <Compile Include="TrainsModel.cs" />
     <Compile Include="TrainTracking.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Wagon.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

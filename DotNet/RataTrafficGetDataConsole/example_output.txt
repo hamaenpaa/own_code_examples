@@ -1,48 +1,43 @@
 Starting data gathering
-got 150 trains during initial gathering of trains
-Went 13479 ms. gathering trains
-Went 2 ms. gathering train numbers and departure dates
-Got 150 train numbers.
+got 138 trains during initial gathering of trains
+Went 12578 ms. gathering trains
+Went 25 ms. gathering train numbers and departure dates
+Got 138 train numbers.
 -----------------------------------------------------
-got 1365 and added 1278 trains when gathering trains for date interval 2016-05-30 - 2016-06-09
-Went 170183 ms. gathering trains for date interval
+got 666 and added 574 trains when gathering trains for date interval 2016-06-04 - 2016-06-09
+Went 90719 ms. gathering trains for date interval
 -----------------------------------------------------
-got 3150 and added 3055 trains when gathering schedules for date interval 2016-05-30 - 2016-06-19
-Went 378742 ms. gathering schedules for date interval
------------------------------------------------------
-got 17578 and added 17477 trains when gathering history trains for date interval 2016-05-30 - 2016-06-09
-Went 980039 ms. gathering history schedules
+got 1518 and added 1460 trains when gathering schedules for date interval 2016-06-04 - 2016-06-14
+Went 194121 ms. gathering schedules for date interval
 -----------------------------------------------------
 got 538 stations when gathering stations
-Went 210 ms. gathering stations
+Went 173 ms. gathering stations
 -----------------------------------------------------
-got 17578 and added 17477 schedules when gathering trains with stations
-Went 0 ms. gathering schedules
------------------------------------------------------
-Went 2320 ms. to remove old train data from database
-Went 129223 ms. to add trains to db
+Went 297616 ms. to gather train related information
+Went 5072 ms. to remove old train data from database
+Adding 2172 trains to database
+Went 18699 ms. to add trains to db
+Went 3695 ms. to add stations to db
+Went 221486 ms. to save trains related data to db
 Went 0 ms. to clear trains collection
-Went 28832 ms. to add stations to db
-Went 160375 ms. to save trains and stations
+got 8617 train trackings when gathering trains trackings
+Went 7544 ms. gathering train trackings
 -----------------------------------------------------
-got 10966 train trackings when gathering trains trackings
-Went 10469 ms. gathering train trackings
------------------------------------------------------
-got 3150 compositions when gathering for date interval 2016-05-30 - 2016-06-19
-Went 88417 ms. gathering compositions
+Went 45175 ms. gathering compositions
 -----------------------------------------------------
 got 19 operators when gathering operators
-Went 42 ms. gathering operators
-got 13 category codes when gathering category codes
-Went 24 ms. gathering category codes
-got 67 detailed category codes when gathering detailed category codes
+Went 45 ms. gathering operators
+got 19 category codes when gathering category codes
+Went 25 ms. gathering category codes
+got 19 detailed category codes when gathering detailed category codes
 Went 32 ms. gathering detailed category codes
-Went 9547 ms. to remove old other data than train data from database
-Went 345 ms. to add train trackings to db
-Went 143 ms. to add compositions to db
-Went 21 ms. to add operators to db
-Went 33 ms. to add category codes to db
-Went 23 ms. to add detailed category codes to db
-Went 17413 ms. to save changes to db
-Went 27525 ms. to save other results to database
-Data got from http://rata.digitraffic.fi/api/v1 in 1829539 ms.
+Went 52827 ms. to gather other than train related data
+Went 10809 ms. to remove old other data than train data from database
+Went 288 ms. to add train trackings to db
+Went 84 ms. to add compositions to db
+Went 14 ms. to add operators to db
+Went 32 ms. to add category codes to db
+Went 14 ms. to add detailed category codes to db
+Went 12523 ms. to save changes to db
+Went 23764 ms. to save other results to database
+Data got from http://rata.digitraffic.fi/api/v1 in 623159 ms.
