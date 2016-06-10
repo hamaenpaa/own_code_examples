@@ -25,6 +25,12 @@ namespace RataRESTWebAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.Routes.MapHttpRoute("DefaultApiWithAction", "AX/{controller}/{action}");
+/*            config.Routes.MapHttpRoute(
+                name: "ActionApi",
+                routeTemplate: "api/{controller}own/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );*/
         }
     }
 }

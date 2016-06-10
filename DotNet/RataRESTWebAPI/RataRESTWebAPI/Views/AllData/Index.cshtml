@@ -171,15 +171,15 @@ $(function()
             $('#compositionsTblBody').append('<tr><td class="train_number">' +
                          item.trainNumber +
                          '</td><td class="departure_date">' +
-                         item.departureDate +
+                         getDispDate(item.departureDate) +
                          "</td><td>" +
                          item.operatorUICCode +
                          "</td><td>" +
-                         item.operatorShortCode +
+                         emptyIfNullSameOtherwise(item.operatorShortCode) +
                          "</td><td>" +
-                         item.trainType +
+                         emptyIfNullSameOtherwise(item.trainType) +
                          "</td><td>" +
-                         item.trainCategory +
+                         emptyIfNullSameOtherwise(item.trainCategory) +
                          "</td><td>" +
                          item.version +
                          "</td></tr>");

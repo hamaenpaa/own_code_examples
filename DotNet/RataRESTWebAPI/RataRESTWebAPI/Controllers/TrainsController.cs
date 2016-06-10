@@ -40,6 +40,110 @@ namespace RataRESTWebAPI.Controllers
             return db.trains.AsQueryable<Trains>();
         }
 
+
+        // GET: AX/Trains/Routes
+        public List<Route> Routes(string source,
+            string target, DateTime dt, int h, int m,
+            int max_stops, int maximumStopTime,
+            int maximumTravelTimeLength)
+        {
+            List<Route> routes = new List<Route>();
+            DateTime realBegin = new DateTime(dt.Year, dt.Month, dt.Day).AddHours(h).AddMinutes(m);
+            if (isSomeDayEmptyOfInfo(dt, dt.AddDays(1)))
+                reloadDateInterval(dt, dt.AddDays(1));
+
+            return routes;
+        }
+
+        private List<RoutePart> getTrainsFromOneStop(
+            string sourceStation, string finalTargetStation,
+            DateTime startBeginLimit, DateTime startEndLimit, 
+            DateTime finalEndLimit)
+        {
+            List<RoutePart> routeParts = new List<RoutePart>();
+            List<TimeTableRow> startingTimeTableRows = 
+                db.timeTableRows.Where<TimeTableRow>(
+                    ttr => ttr.stationShortCode == sourceStation &&
+                           ttr.trainStopping == false &&
+                           ttr.scheduledTime >= startBeginLimit &&
+                           ttr.scheduledTime <= startEndLimit
+                ).ToList<TimeTableRow>();
+            List<int> trainNumbers = new List<int>();
+            SortedDictionary<int, DateTime> startingTimesOfTrains =
+                new SortedDictionary<int, DateTime>();
+            foreach (TimeTableRow ttr in startingTimeTableRows)
+            {
+                if (!trainNumbers.Contains(ttr.trains.id))
+                {
+                    trainNumbers.Add(ttr.trains.id);
+                    startingTimesOfTrains.Add(ttr.trains.id, ttr.scheduledTime);
+                }
+            }
+            foreach (int tn in trainNumbers) {
+                DateTime beginTime;
+                startingTimesOfTrains.TryGetValue(tn, out beginTime);
+                RouteStop beginRouteStop = new RouteStop()
+                {
+                    station = sourceStation,
+                    time = beginTime
+                };
+                List<TimeTableRow> endingTimeTableRows =
+                    db.timeTableRows.Where<TimeTableRow>(
+                        ttr => ttr.trains.trainNumber == tn &&
+                               ttr.trainStopping == true &&
+                               ttr.scheduledTime >= beginTime &&
+                               ttr.scheduledTime <= finalEndLimit
+                    ).ToList<TimeTableRow>();
+                RoutePart onlyRemainingRoutePart = null;
+                List<RoutePart> trainRouteParts = new List<RoutePart>();
+                foreach(TimeTableRow ttr in endingTimeTableRows)
+                {
+                    RouteStop endRouteStop = new RouteStop()
+                    {
+                        station = ttr.stationShortCode,
+                        time = ttr.scheduledTime
+                    };
+                    RoutePart routePart = new RoutePart()
+                    {
+                        beginStop = beginRouteStop,
+                        endStop = endRouteStop,
+                        trainNumber = tn
+                    };
+                    if (endRouteStop.station == finalTargetStation)
+                    {
+                        onlyRemainingRoutePart = routePart;
+                        break;
+                    }
+                    trainRouteParts.Add(routePart);
+                }
+                if (onlyRemainingRoutePart != null)
+                {
+                    trainRouteParts.Clear();
+                    trainRouteParts.Add(onlyRemainingRoutePart);
+                }
+                routeParts.AddRange(trainRouteParts);
+            }
+            return routeParts;
+        }
+
+
+        private Route findRoute(string source, string target, DateTime realBegin,
+            int max_stops, int maximumStopTime, int maximumTravelTimeLength)
+        {
+            return null;
+        }
+
+        private bool isSomeDayEmptyOfInfo(DateTime begin, DateTime end)
+        {
+            return false;
+        }
+
+        private void reloadDateInterval(DateTime begin, DateTime end)
+        {
+
+        }
+
+
         private void reloadTrains()
         {
             // delete from database

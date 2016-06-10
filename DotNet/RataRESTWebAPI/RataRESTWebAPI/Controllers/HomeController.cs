@@ -14,5 +14,13 @@ namespace RataRESTWebAPI.Controllers
 
             return View();
         }
+
+        public ActionResult Routes()
+        {
+            ViewBag.Title = "Routes";
+
+            return View();
+        }
+
     }
 }

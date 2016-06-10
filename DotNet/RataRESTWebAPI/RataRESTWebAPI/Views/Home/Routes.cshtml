@@ -1,0 +1,66 @@
+﻿@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("#leaving_date").datepicker();
+            queryParamString = "?reload=false";
+            $.getJSON('/AX/Stations/options' + queryParamString, function (stationOptionsJsonPayload) {
+                $(stationOptionsJsonPayload).each(function (i, item) {
+                    $("#sourceStation").append("<option value='" + item.stationCode + "'>" +
+                        item.stationName + "</option>");
+                    $("#targetStation").append("<option value='" + item.stationCode + "'>" +
+                        item.stationName + "</option>");
+                });
+            });
+/*            $("#btn_route_seek").bind("click", function (e) {
+                queryParamString = "?source=" + $("#sourceStation").attr("value") +
+                    "&target=" + $("#targetStation").attr("value") +
+                    "&dt=" + $("#leaving_date").attr("value") +
+                    "&h=" + $("#leaving_hour").attr("value") +
+                    "&m=" + $("#leaving_minute").attr("value") +
+                    "&max_stops=" + $("#intermediateStopMax").attr("value") +
+                    "&maximumStopTime=" + $("#maximumStopTime").attr("value") +
+                    "&maximumTravelTimeLength=" + $("#maximumTravelTimeLength").attr("value");
+                $.getJSON("/AX/Trains/Routes" + queryParamString, 
+                    function(routesJSONPayLoad) {
+                        $(routesJSONPayLoad).each(function (i, item) {
+
+                        });
+                    });
+            });*/
+        });
+    </script>
+}
+
+    <div>
+        <div>
+            <label for="sourceStation">Travel starts from:</label>
+            <select id="sourceStation" name="sourceStation"></select>
+        </div>
+        <div>
+            <label for="targetStation">Travel ends to:</label>
+            <select id="targetStation" name="targetStation"></select>
+        </div>
+        <div>
+            <label for="leaving_time">Travel begins at:</label>
+            <input type="text" name="leaving_date" id="leaving_date">
+        </div>
+        <br/><br /><br /><br /><br /><br /><br /><br />
+        <div>
+            <label>Travel beginning hours and minutes:</label>
+            <input type="text" name="leaving_hour" id="leaving_hour" size="2"> : 
+            <input type="text" name="leaving_minute" id="leaving_minute" size="2">
+        </div>
+        <div>
+            <label for="maximumIntermediateStopCount">Maximum number of intermediate stops</label>
+            <input id="maximumIntermediateStopCount" type="text" name="intermediateStopMax" size="2" />
+        </div>
+        <div>
+            <label for="maximumTimeForIntermediateStop">Maximum length of time stopped intermediately (minutes)</label>
+            <input id="maximumTimeForIntermediateStop" type="text" name="maximumStopTime" size="3" />
+        </div>
+        <div>
+            <label for="maximumTravelTimeLength">Maximum length of travel time (hours)</label>
+            <input id="maximumTravelTimeLength" type="text" name="maximumTravelTimeLength" size="2" />
+        </div>
+        <button value="Seek routes" id="btn_route_seek"/>
+    </div>

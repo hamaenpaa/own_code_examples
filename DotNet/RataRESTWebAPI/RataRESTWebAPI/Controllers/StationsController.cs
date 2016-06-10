@@ -29,6 +29,23 @@ namespace RataRESTWebAPI.Controllers
             return db.stations;
         }
 
+        // GET: AX/Stations/options
+        [HttpGet]
+        public IList<StationOption> options([FromUri] bool reload)
+        {
+            List<StationOption> stationOptions = new List<StationOption>();
+            if (reload)
+                reloadStations();
+            var query = from s in db.stations select s;
+            foreach (Station s in query)
+                stationOptions.Add(new StationOption()
+                {
+                    stationCode = s.stationShortCode,
+                    stationName = s.stationName + " (" + s.stationShortCode + ")"
+                });
+            return stationOptions;
+        }
+
         private void reloadStations()
         {
             IEnumerable<Station> enumStations = db.stations.AsEnumerable<Station>();
