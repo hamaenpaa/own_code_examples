@@ -270,6 +270,9 @@
     <Compile Include="Models\Operator.cs" />
     <Compile Include="Models\OwnDateConverter.cs" />
     <Compile Include="Models\OwnDateTimeConverter.cs" />
+    <Compile Include="Models\Route.cs" />
+    <Compile Include="Models\RoutePart.cs" />
+    <Compile Include="Models\RouteStop.cs" />
     <Compile Include="Models\Station.cs" />
     <Compile Include="Models\StationOption.cs" />
     <Compile Include="Models\TimeTableRow.cs" />
