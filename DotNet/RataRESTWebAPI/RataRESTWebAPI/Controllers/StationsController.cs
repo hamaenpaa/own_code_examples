@@ -18,7 +18,7 @@ namespace RataRESTWebAPI.Controllers
         const string SERVICE_ROOT = "http://rata.digitraffic.fi/api/v1";
         private TrainsModel db = new TrainsModel();
 
-        // GET: api/Stations
+        // GET: AX/Stations/GetStations
         public IQueryable<Station> Getstations([FromUri] bool reload)
         {
             if (reload)
