@@ -5,6 +5,12 @@ class HelloWorld extends React.Component {
     }
 }
 ReactDOM.render(
-    React.createElement(HelloWorld, null),
+    React.createElement(
+        'div', 
+        null, 
+        React.createElement(HelloWorld),
+        React.createElement(HelloWorld),
+        React.createElement(HelloWorld)
+    ),
     document.getElementById('content')
 )
